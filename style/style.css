@@ -51,11 +51,6 @@ a:not([class]) {
 }
 
 /* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
   margin-top: 1em;
@@ -181,6 +176,7 @@ select {
   grid-template-rows: 510px;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  margin-bottom: 25.6666666667%;
 }
 .first-page__main .first-page__main-inner {
   display: grid;
@@ -285,9 +281,11 @@ select {
   line-height: 16px;
 }
 
-.first-page__footer {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+.page-first__footer {
+  background: url(./img/BG_first_footer.png) repeat-x;
+  background-position: center;
+  background-size: contain;
+  height: 150px;
 }
 
 .footer__main {
@@ -576,6 +574,12 @@ select {
   .footer__main .footer__socials .footer__join-text {
     display: none;
   }
+  .page-first__footer {
+    background: url(./img/BG_first_footer.png) repeat-x;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+  }
 }
 @media (max-width: 600px) {
   .first-page__main-inner-img {
@@ -688,6 +692,12 @@ select {
   .footer__author .footer__author-produced {
     font-size: 10px;
     line-height: 10px;
+  }
+  .page-first__footer {
+    background: url(./img/BG_first_footer.png) repeat-x;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
   }
 }
 @media (max-width: 450px) {

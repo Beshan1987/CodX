@@ -134,6 +134,12 @@
   .footer__main .footer__socials .footer__join-text {
     display: none;
   }
+  .page-first__footer {
+    background: url(./img/BG_first_footer.png) repeat-x;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+  }
 }
 @media (max-width: 600px) {
   .first-page__main-inner-img {
@@ -246,6 +252,12 @@
   .footer__author .footer__author-produced {
     font-size: 10px;
     line-height: 10px;
+  }
+  .page-first__footer {
+    background: url(./img/BG_first_footer.png) repeat-x;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
   }
 }
 @media (max-width: 450px) {

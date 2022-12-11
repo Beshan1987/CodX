@@ -79,6 +79,7 @@
 	grid-template-columns: 49% 50%;
 	grid-template-rows: 510px;
 	column-gap: 10px;
+	margin-bottom: calc(308 / 1200 * 100%);
 
 	.first-page__main-inner {
 		display: grid;
@@ -193,9 +194,11 @@
 	}
 }
 
-.first-page__footer {
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
+.page-first__footer {
+	background: url(./img/BG_first_footer.png) repeat-x;
+	background-position: center;
+	background-size: contain;
+	height: 150px;
 }
 
 .footer__main {
