@@ -1,0 +1,217 @@
+@media (max-width: 900px) {
+	%font {
+		font-family: "Outfit";
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	.first-page__main {
+		padding-top: calc(16 / 1200 * 100%);
+		grid-template-columns: 100%;
+		grid-template-rows: 39% 60%;
+		row-gap: 10px;
+		height: calc(1060 / 1200 * 100%);
+
+		.first-page__main-inner {
+			grid-template-rows: 5% 55% 25%;
+			padding-top: calc(20 / 600 * 100%);
+			justify-items: center;
+
+			.first-page__main-upper {
+				width: 100%;
+				text-align: center;
+			}
+			.first-page__main-title {
+				width: 100%;
+				text-align: center;
+			}
+			.first-page__main-sub {
+				text-align: center;
+				justify-self: center;
+			}
+		}
+	}
+
+	.first-page__main-inner-img {
+		position: relative;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		justify-items: center;
+
+		.first-page__main-imgfirst {
+			background: url(./img/BG_man.jpg) no-repeat;
+			background-position: center;
+			position: relative;
+			border-radius: 30px;
+			width: calc(325 / 450 * 100%);
+
+			.first-page__main-imgfirst-inner {
+				.first-page__main-imgfirst-names {
+					padding-left: 5px;
+					.first-page__main-name {
+						width: 22px;
+					}
+				}
+				.first-page__main-name-inner {
+				}
+			}
+		}
+	}
+	.first-page__main-inner-img {
+		.first-page__main-imgfirst-woman {
+			background: url(./img/BG_woman.jpg) no-repeat;
+			background-position: center;
+			border-radius: 30px;
+			position: relative;
+			margin: 0;
+			width: calc(410 / 450 * 100%);
+
+			.first-page__main-imgfirst-inner {
+				.first-page__main-imgfirst-names {
+					padding-left: 5px;
+					.first-page__main-name {
+						width: 41px;
+					}
+				}
+				.first-page__main-name-inner {
+					& :nth-child(1) {
+					}
+				}
+			}
+		}
+	}
+
+	.header__menu-logo {
+		display: grid;
+		grid-template-columns: 35% 55%;
+		width: 50%;
+		align-items: center;
+		justify-content: end;
+		.header__menu-list {
+			.header__menu-item-link {
+				font-size: 10px;
+			}
+		}
+	}
+}
+
+.header__menu-list-socials {
+	width: 45%;
+	grid-template-columns: 10% 10% 10% 60%;
+	.header__menu-button-inner {
+		.header__menu-button {
+			.header__menu-button-link {
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.first-page__main-inner-img {
+		grid-template-columns: 50% 50%;
+		column-gap: 20px;
+
+		.first-page__main-imgfirst {
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			.first-page__main-imgfirst-inner {
+				left: 0;
+				top: 0;
+			}
+		}
+		& .first-page__main-imgfirst-woman {
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			.first-page__main-imgfirst-inner {
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+	.header__menu-list-socials {
+		grid-template-columns: 30% 30% 30%;
+		justify-items: center;
+		.header__menu-button-inner {
+			display: none;
+		}
+	}
+	.header__menu-logo {
+		width: 90%;
+		align-items: center;
+		justify-content: end;
+		.header__menu-list {
+			.header__menu-item-link {
+				font-size: 10px;
+			}
+		}
+	}
+	.first-page__main {
+		padding-top: calc(16 / 1200 * 100%);
+		grid-template-columns: 100%;
+		grid-template-rows: 39% 60%;
+		row-gap: 10px;
+		height: calc(800 / 1200 * 100%);
+		.first-page__main-inner {
+			grid-template-rows: 5% 55% 25%;
+			padding-top: calc(20 / 600 * 100%);
+			justify-items: center;
+
+			.first-page__main-upper {
+				width: 100%;
+				text-align: center;
+			}
+			.first-page__main-title {
+				font-size: 40px;
+				width: 100%;
+				text-align: center;
+			}
+			.first-page__main-sub {
+				font-size: 12px;
+				text-align: center;
+				justify-self: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.header__menu-list-socials {
+		display: none;
+	}
+
+	.first-page__main-inner-img {
+		grid-template-columns: 100%;
+		row-gap: 20px;
+
+		.first-page__main-imgfirst {
+			background-size: contain;
+			height: 100%;
+			width: 100%;
+			.first-page__main-imgfirst-inner {
+				display: none;
+			}
+		}
+		& .first-page__main-imgfirst-woman {
+			background-size: contain;
+			height: 100%;
+			width: 100%;
+			.first-page__main-imgfirst-inner {
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 370px) {
+	.first-page__main {
+		.first-page__main-inner {
+			.first-page__main-title {
+				font-size: 30px;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
