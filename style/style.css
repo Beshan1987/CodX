@@ -622,8 +622,6 @@ select {
     grid-template-columns: 100%;
     grid-template-rows: 44% 56%;
     row-gap: 10px;
-    min-height: 600px;
-    height: 90%;
   }
   .first-page__main .first-page__main-inner {
     grid-template-rows: 5% 55% 25%;
@@ -647,8 +645,7 @@ select {
   }
   .footer__main {
     grid-template-columns: 100%;
-    grid-template-rows: 22% 29% 40%;
-    height: 250px;
+    grid-template-rows: 31% 26% 38%;
   }
   .footer__main .footer__socials {
     display: grid;
