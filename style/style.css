@@ -105,22 +105,12 @@ select {
 ._container {
   margin: 0 auto;
   max-width: 1200px;
-  height: 100vh;
   min-width: 300px;
-  height: 100vh;
 }
 
 ._container-footer {
   margin: 0 auto;
   max-width: 1200px;
-}
-
-.wrapper {
-  display: flex;
-  flex-flow: column;
-}
-.wrapper .wrapper_inner {
-  flex: 1 1 auto;
 }
 
 .header {
@@ -216,9 +206,6 @@ select {
   color: #2f2f2f;
 }
 
-.first-page__main-inner-img {
-  position: relative;
-}
 .first-page__main-inner-img .first-page__main-imgfirst {
   background: url(./img/BG_man.jpg) no-repeat;
   background-position: center;
@@ -255,9 +242,6 @@ select {
   color: #2f2f2f;
 }
 
-.first-page__main-inner-img {
-  position: relative;
-}
 .first-page__main-inner-img .first-page__main-imgfirst-woman {
   background: url(./img/BG_woman.jpg) no-repeat;
   background-position: center;
@@ -299,6 +283,11 @@ select {
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1) {
   font-size: 16px;
   line-height: 16px;
+}
+
+.first-page__footer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .footer__main {
@@ -370,25 +359,25 @@ select {
   width: 70%;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 12px;
   letter-spacing: 0.48px;
   color: rgba(47, 47, 47, 0.36);
-  padding: 12px 169px 12px 32px;
+  padding: 12px 169px 12px 20px;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail input:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 12px;
   letter-spacing: 0.48px;
   color: rgba(47, 47, 47, 0.36);
-  padding: 12px 169px 12px 32px;
+  padding: 12px 169px 12px 20px;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail input::placeholder {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 12px;
   letter-spacing: 0.48px;
   color: rgba(47, 47, 47, 0.36);
-  padding: 12px 169px 12px 32px;
+  padding: 12px 169px 12px 20px;
 }
 
 .footer__links {
