@@ -5,6 +5,7 @@
     grid-template-rows: 39% 60%;
     row-gap: 10px;
     height: 88.3333333333%;
+    min-height: 810px;
   }
   .first-page__main .first-page__main-inner {
     grid-template-rows: 5% 55% 25%;
@@ -28,6 +29,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
+    min-height: 510px;
   }
   .first-page__main-inner-img .first-page__main-imgfirst {
     background: url(./img/BG_man.jpg) no-repeat;
@@ -76,6 +78,7 @@
     grid-template-columns: 50% 50%;
     -moz-column-gap: 20px;
          column-gap: 20px;
+    min-height: 500px;
   }
   .first-page__main-inner-img .first-page__main-imgfirst {
     background-size: cover;
@@ -116,6 +119,7 @@
     grid-template-rows: 39% 60%;
     row-gap: 10px;
     height: 66.6666666667%;
+    min-height: 600px;
   }
   .first-page__main .first-page__main-inner {
     grid-template-rows: 5% 55% 25%;
