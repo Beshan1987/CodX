@@ -95,16 +95,104 @@
 			}
 		}
 	}
-}
 
-.header__menu-list-socials {
-	width: 45%;
-	grid-template-columns: 10% 10% 10% 60%;
-	.header__menu-button-inner {
-		.header__menu-button {
-			.header__menu-button-link {
+	.header__menu-list-socials {
+		width: 45%;
+		grid-template-columns: 10% 10% 10% 60%;
+		.header__menu-button-inner {
+			.header__menu-button {
+				.header__menu-button-link {
+				}
 			}
 		}
+	}
+	.footer__main {
+		height: 240px;
+		min-height: calc(240 / 1200 * 100%);
+		grid-template-columns: 24% 35% 39%;
+		.footer__socials {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 45% 15% 15%;
+			.footer__join-text {
+				font-size: 15px;
+			}
+		}
+		.footer__socials-list {
+			.footer__socials-item-link {
+			}
+		}
+		.footer__new-reg {
+			grid-template-rows: 25% 30% 30%;
+			.footer__new-reg-title {
+				font-size: 25px;
+				line-height: 25px;
+			}
+			.footer__new-reg-sub {
+				font-size: 15px;
+				line-height: 15px;
+			}
+			.footer__new-reg-mail {
+				button {
+				}
+				:hover {
+				}
+				& a {
+				}
+				input {
+					&::placeholder {
+					}
+				}
+			}
+		}
+	}
+
+	.footer__links {
+		.footer__links-list {
+			grid-template-rows: 25% 13% 13% 13%;
+			.footer__links-item {
+				.footer__links-item-link {
+					font-size: 12px;
+					line-height: 12px;
+				}
+				:hover {
+				}
+				&:first-child {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.footer__main {
+		grid-template-columns: 20% 25% 40%;
+		justify-content: space-between;
+		width: 100%;
+		.footer__new-reg {
+			grid-template-columns: 100%;
+			grid-template-rows: 22% 55%;
+			.footer__new-reg-title {
+			}
+			.footer__new-reg-sub {
+				display: none;
+			}
+			.footer__new-reg-mail {
+				display: grid;
+				grid-template-rows: 41% 41%;
+				row-gap: 10px;
+				button {
+					width: 80%;
+				}
+			}
+		}
+	}
+	.footer__main .footer__new-reg .footer__new-reg-mail input {
+		width: 80%;
+	}
+	.footer__main .footer__socials .footer__join-text {
+		display: none;
 	}
 }
 
@@ -112,7 +200,7 @@
 	.first-page__main-inner-img {
 		grid-template-columns: 50% 50%;
 		column-gap: 20px;
-		min-height: 500px;
+		min-height: 400px;
 
 		.first-page__main-imgfirst {
 			background-size: cover;
@@ -153,14 +241,15 @@
 	.first-page__main {
 		padding-top: calc(16 / 1200 * 100%);
 		grid-template-columns: 100%;
-		grid-template-rows: 39% 60%;
+		grid-template-rows: 44% 56%;
 		row-gap: 10px;
-		height: calc(800 / 1200 * 100%);
 		min-height: 600px;
+		height: 90%;
 		.first-page__main-inner {
 			grid-template-rows: 5% 55% 25%;
 			padding-top: calc(20 / 600 * 100%);
 			justify-items: center;
+			min-height: 220px;
 
 			.first-page__main-upper {
 				width: 100%;
@@ -178,6 +267,54 @@
 			}
 		}
 	}
+	.footer__main {
+		grid-template-columns: 100%;
+		grid-template-rows: 22% 29% 40%;
+		height: 250px;
+	}
+	.footer__main .footer__socials {
+		display: grid;
+		grid-template-columns: 30% 70%;
+		grid-template-rows: none;
+		justify-items: end;
+		align-items: center;
+	}
+	.footer__links .footer__links-list {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: none;
+		width: 100%;
+		justify-items: center;
+		padding-top: 5px;
+	}
+	.footer__links {
+		grid-template-columns: 100%;
+		grid-template-rows: 50% 50%;
+	}
+	.footer__main .footer__new-reg .footer__new-reg-title {
+		display: none;
+	}
+	.footer__main .footer__new-reg {
+		grid-template-columns: 100%;
+		grid-template-rows: 100%;
+		row-gap: 10px;
+		justify-items: center;
+	}
+	.footer__main .footer__new-reg .footer__new-reg-mail {
+		padding-top: 10px;
+		display: grid;
+		grid-template-rows: 44% 45%;
+		row-gap: 10px;
+		grid-template-columns: 100%;
+	}
+
+	.footer__author .footer__author-name span {
+		font-size: 10px;
+		line-height: 10px;
+	}
+	.footer__author .footer__author-produced {
+		font-size: 10px;
+		line-height: 10px;
+	}
 }
 
 @media (max-width: 450px) {
@@ -188,6 +325,7 @@
 	.first-page__main-inner-img {
 		grid-template-columns: 100%;
 		row-gap: 20px;
+		min-height: 300px;
 
 		.first-page__main-imgfirst {
 			background-size: contain;
@@ -206,6 +344,13 @@
 			}
 		}
 	}
+	.first-page__main {
+		padding-top: calc(16 / 1200 * 100%);
+		grid-template-columns: 100%;
+		grid-template-rows: 31% 67%;
+		row-gap: 10px;
+		min-height: 600px;
+	}
 }
 
 @media (max-width: 370px) {
@@ -217,5 +362,16 @@
 				text-align: center;
 			}
 		}
+	}
+}
+
+@media (max-width: 410px) {
+	.footer__author {
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		width: 90%;
+		margin-bottom: 47px;
+		align-items: center;
 	}
 }

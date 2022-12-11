@@ -210,13 +210,13 @@
 	padding-top: calc(98 / 1200 * 100%);
 	display: grid;
 	grid-template-columns: 20% 37% 43%;
-	width: calc((1200 - 160) / 1200 * 100%);
 	margin: 0 auto;
 	margin-bottom: calc(125 / 1200 * 100%);
 	font-family: "Outfit";
 	font-style: normal;
 	font-weight: 400;
 	height: 240px;
+	min-height: calc(240 / 1200 * 100%);
 	.footer__socials {
 		display: grid;
 		grid-template-columns: 100%;
@@ -239,11 +239,11 @@
 			color: #2f2f2f;
 		}
 		.footer__new-reg-sub {
+			font-size: 18px;
+			line-height: 26px;
+			letter-spacing: 0.48px;
+			color: #2f2f2f;
 		}
-		font-size: 18px;
-		line-height: 26px;
-		letter-spacing: 0.48px;
-		color: #2f2f2f;
 		.footer__new-reg-mail {
 			button {
 				background-color: #2f2f2f;
@@ -322,6 +322,7 @@
 	font-family: "Outfit";
 	font-style: normal;
 	font-weight: 400;
+	align-items: center;
 	.footer__author-produced {
 		font-size: 14px;
 		line-height: 16px;
