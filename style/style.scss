@@ -6,7 +6,9 @@
 	margin: 0 auto;
 	max-width: 1200px;
 	min-width: 300px;
-	height: 100vh;
+}
+.wrapper {
+	min-height: 100%;
 }
 
 ._container-footer {
@@ -199,7 +201,8 @@
 	background: url(./img/BG_first_footer.png) repeat-x;
 	background-position: center;
 	background-size: contain;
-	height: 150px;
+	height: 15vh;
+	width: 100vw;
 }
 
 .footer__main {
@@ -244,7 +247,7 @@
 			button {
 				background-color: #2f2f2f;
 				font-size: 14px;
-				width: 79px;
+				width: 85px;
 				height: 40px;
 				border-radius: 20px;
 				transition: 0.5s;
