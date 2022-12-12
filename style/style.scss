@@ -81,17 +81,17 @@
 
 .first-page__main {
 	padding-top: calc(16 / 1200 * 100%);
-	display: grid;
-	grid-template-columns: 49% 50%;
-	grid-template-rows: 510px;
-	column-gap: 10px;
+	display: flex;
+	height: 510px;
 	margin-bottom: calc(308 / 1200 * 100%);
 
 	.first-page__main-inner {
-		display: grid;
-		grid-template-rows: 10% 53% 13%;
-		padding-top: calc(144 / 600 * 100%);
+		display: flex;
+		flex-flow: column;
+		width: calc(538 / 1200 * 100%);
+		margin-right: calc(83 / 1200 * 100%);
 		.first-page__main-upper {
+			padding-top: calc(144 / 538 * 100%);
 			font-size: 13px;
 			line-height: 14px;
 			letter-spacing: 0.48px;
@@ -104,6 +104,7 @@
 			letter-spacing: 0.48px;
 			color: #2f2f2f;
 			@extend %font;
+			margin-bottom: calc(25 / 538 * 100%);
 		}
 		.first-page__main-sub {
 			font-size: 17px;
@@ -116,16 +117,22 @@
 }
 
 .first-page__main-inner-img {
+	width: calc(580 / 1200 * 100%);
+	position: relative;
+	min-height: 510px;
+
 	.first-page__main-imgfirst {
 		background: url(./img/BG_man.jpg) no-repeat;
 		background-position: center;
-		position: relative;
+		background-size: cover;
+		position: absolute;
 		height: calc(325 / 510 * 100%);
-		width: calc(325 / 600 * 100%);
-		border-radius: 30px;
+		width: calc(325 / 580 * 100%);
+		min-width: 325px;
+		top: 0;
+		left: 0;
 		.first-page__main-imgfirst-inner {
-			display: grid;
-			grid-template-columns: 40% 55%;
+			display: flex;
 			width: 105px;
 			background: rgba(255, 255, 255, 0.85);
 			box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
@@ -133,8 +140,8 @@
 			height: 33px;
 			align-items: center;
 			position: absolute;
-			left: calc(-40 / 600 * 100%);
-			top: calc(16 / 510 * 100%);
+			left: calc(-40 / 325 * 100%);
+			top: calc(16 / 325 * 100%);
 			.first-page__main-imgfirst-names {
 				padding-left: 5px;
 				.first-page__main-name {
@@ -154,16 +161,18 @@
 	}
 }
 .first-page__main-inner-img {
+	position: relative;
 	.first-page__main-imgfirst-woman {
 		background: url(./img/BG_woman.jpg) no-repeat;
 		background-position: center;
 		height: calc(410 / 510 * 100%);
-		width: calc(410 / 600 * 100%);
+		width: calc(410 / 580 * 100%);
+		min-width: 350px;
 		border-radius: 30px;
-		margin-top: calc(-225 / 600 * 100%);
-		margin-left: calc(169 / 600 * 100%);
-		position: relative;
+		position: absolute;
 		border-radius: 30px;
+		bottom: 0;
+		right: 0;
 		.first-page__main-imgfirst-inner {
 			display: grid;
 			grid-template-columns: 40% 55%;
@@ -175,7 +184,7 @@
 			align-items: center;
 			position: absolute;
 			top: calc(333 / 410 * 100%);
-			left: calc(-80 / 600 * 100%);
+			left: calc(-80 / 410 * 100%);
 			.first-page__main-imgfirst-names {
 				padding-left: 5px;
 				.first-page__main-name {

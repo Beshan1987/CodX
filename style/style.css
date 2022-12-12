@@ -184,19 +184,18 @@ select {
 
 .first-page__main {
   padding-top: 1.3333333333%;
-  display: grid;
-  grid-template-columns: 49% 50%;
-  grid-template-rows: 510px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  display: flex;
+  height: 510px;
   margin-bottom: 25.6666666667%;
 }
 .first-page__main .first-page__main-inner {
-  display: grid;
-  grid-template-rows: 10% 53% 13%;
-  padding-top: 24%;
+  display: flex;
+  flex-flow: column;
+  width: 44.8333333333%;
+  margin-right: 6.9166666667%;
 }
 .first-page__main .first-page__main-inner .first-page__main-upper {
+  padding-top: 26.7657992565%;
   font-size: 13px;
   line-height: 14px;
   letter-spacing: 0.48px;
@@ -207,6 +206,7 @@ select {
   line-height: 64px;
   letter-spacing: 0.48px;
   color: #2f2f2f;
+  margin-bottom: 4.6468401487%;
 }
 .first-page__main .first-page__main-inner .first-page__main-sub {
   font-size: 17px;
@@ -215,17 +215,24 @@ select {
   color: #2f2f2f;
 }
 
+.first-page__main-inner-img {
+  width: 48.3333333333%;
+  position: relative;
+  min-height: 510px;
+}
 .first-page__main-inner-img .first-page__main-imgfirst {
   background: url(./img/BG_man.jpg) no-repeat;
   background-position: center;
-  position: relative;
+  background-size: cover;
+  position: absolute;
   height: 63.7254901961%;
-  width: 54.1666666667%;
-  border-radius: 30px;
+  width: 56.0344827586%;
+  min-width: 325px;
+  top: 0;
+  left: 0;
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
-  display: grid;
-  grid-template-columns: 40% 55%;
+  display: flex;
   width: 105px;
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
@@ -233,8 +240,8 @@ select {
   height: 33px;
   align-items: center;
   position: absolute;
-  left: -6.6666666667%;
-  top: 3.137254902%;
+  left: -12.3076923077%;
+  top: 4.9230769231%;
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-imgfirst-names {
   padding-left: 5px;
@@ -251,16 +258,20 @@ select {
   color: #2f2f2f;
 }
 
+.first-page__main-inner-img {
+  position: relative;
+}
 .first-page__main-inner-img .first-page__main-imgfirst-woman {
   background: url(./img/BG_woman.jpg) no-repeat;
   background-position: center;
   height: 80.3921568627%;
-  width: 68.3333333333%;
+  width: 70.6896551724%;
+  min-width: 350px;
   border-radius: 30px;
-  margin-top: -37.5%;
-  margin-left: 28.1666666667%;
-  position: relative;
+  position: absolute;
   border-radius: 30px;
+  bottom: 0;
+  right: 0;
 }
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
   display: grid;
@@ -273,7 +284,7 @@ select {
   align-items: center;
   position: absolute;
   top: 81.2195121951%;
-  left: -13.3333333333%;
+  left: -19.512195122%;
 }
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-imgfirst-names {
   padding-left: 5px;
@@ -632,63 +643,33 @@ select {
     font-weight: 400;
   }
   .first-page__main {
-    padding-top: 1.3333333333%;
-    grid-template-columns: 100%;
-    grid-template-rows: 35% 63%;
-    row-gap: 10px;
-    height: 100%;
-    min-height: 760px;
-  }
-  .first-page__main .first-page__main-inner {
-    grid-template-rows: 5% 55% 25%;
-    padding-top: 3.3333333333%;
-    justify-items: center;
-  }
-  .first-page__main .first-page__main-inner .first-page__main-upper {
-    width: 100%;
-    text-align: center;
-  }
-  .first-page__main .first-page__main-inner .first-page__main-title {
-    width: 100%;
-    text-align: center;
-  }
-  .first-page__main .first-page__main-inner .first-page__main-sub {
-    text-align: center;
-    justify-self: center;
+    flex-wrap: wrap;
+    height: 800px;
+    justify-content: center;
   }
   .first-page__main-inner-img {
-    position: relative;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-    min-height: 510px;
+    min-width: 48%;
+  }
+  .first-page__main .first-page__main-inner {
+    width: 90%;
+    text-align: center;
+    margin-right: 0;
+  }
+  .first-page__main-inner-img {
+    width: 90%;
+    height: 430px;
   }
   .first-page__main-inner-img .first-page__main-imgfirst {
-    background: url(./img/BG_man.jpg) no-repeat;
-    background-position: center;
-    position: relative;
-    border-radius: 30px;
-    width: 72.2222222222%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-imgfirst-names {
-    padding-left: 5px;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-imgfirst-names .first-page__main-name {
-    width: 22px;
+    background-size: cover;
+    width: 30.0925925926%;
   }
   .first-page__main-inner-img .first-page__main-imgfirst-woman {
-    background: url(./img/BG_woman.jpg) no-repeat;
-    background-position: center;
-    border-radius: 30px;
-    position: relative;
-    margin: 0;
-    width: 91.1111111111%;
+    background-size: cover;
+    width: 37.962962963%;
+    height: 80.3921568627%;
   }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-imgfirst-names {
-    padding-left: 5px;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-imgfirst-names .first-page__main-name {
-    width: 41px;
+  .first-page__main .first-page__main-inner .first-page__main-upper {
+    padding-top: 5%;
   }
   .header__menu-logo {
     display: grid;
@@ -737,6 +718,34 @@ select {
   }
   .footer__links .footer__links-list .footer__links-item:first-child {
     font-size: 16px;
+  }
+}
+@media (max-width: 750px) {
+  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
+    top: 10%;
+    left: 65%;
+  }
+  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
+    top: 10%;
+    left: 55%;
+  }
+  .first-page__main .first-page__main-inner .first-page__main-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 410px) {
+  .first-page__main-inner-img .first-page__main-imgfirst {
+    top: 0;
+    right: 0;
+    background-size: cover;
+  }
+  .first-page__main-inner-img .first-page__main-imgfirst-woman {
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+  }
+  .first-page__main {
+    min-width: 320px;
   }
 }
 @media (max-width: 750px) {
@@ -793,26 +802,6 @@ select {
   }
 }
 @media (max-width: 780px) {
-  .footer__main {
-    grid-template-columns: 20% 25% 40%;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .footer__main .footer__new-reg {
-    grid-template-columns: 100%;
-    grid-template-rows: 22% 55%;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-sub {
-    display: none;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail {
-    display: grid;
-    grid-template-rows: 41% 41%;
-    row-gap: 10px;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail button {
-    width: 80%;
-  }
   .footer__main .footer__new-reg .footer__new-reg-mail input {
     width: 80%;
   }
@@ -827,30 +816,6 @@ select {
   }
 }
 @media (max-width: 600px) {
-  .first-page__main-inner-img {
-    grid-template-columns: 50% 50%;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    min-height: 400px;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst {
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
-    left: 0;
-    top: 0;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman {
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
-    left: 0;
-    top: 0;
-  }
   .header__menu-list-socials {
     grid-template-columns: 30% 30% 30%;
     justify-items: center;
@@ -865,32 +830,6 @@ select {
   }
   .header__menu-logo .header__menu-list .header__menu-item-link {
     font-size: 10px;
-  }
-  .first-page__main {
-    padding-top: 1.3333333333%;
-    grid-template-columns: 100%;
-    grid-template-rows: 33% 51%;
-    row-gap: 10px;
-  }
-  .first-page__main .first-page__main-inner {
-    grid-template-rows: 5% 55% 25%;
-    padding-top: 3.3333333333%;
-    justify-items: center;
-    min-height: 220px;
-  }
-  .first-page__main .first-page__main-inner .first-page__main-upper {
-    width: 100%;
-    text-align: center;
-  }
-  .first-page__main .first-page__main-inner .first-page__main-title {
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-  }
-  .first-page__main .first-page__main-inner .first-page__main-sub {
-    font-size: 12px;
-    text-align: center;
-    justify-self: center;
   }
   .footer__main {
     grid-template-columns: 100%;
@@ -959,43 +898,15 @@ select {
   .header__menu-list-socials {
     display: none;
   }
-  .first-page__main-inner-img {
-    grid-template-columns: 100%;
-    row-gap: 20px;
-    min-height: 300px;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst {
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
-    display: none;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman {
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
-    display: none;
-  }
-  .first-page__main {
-    padding-top: 1.3333333333%;
-    grid-template-columns: 100%;
-    grid-template-rows: 31% 67%;
-    row-gap: 10px;
-    min-height: 600px;
-  }
 }
-@media (max-width: 380px) {
+@media (max-width: 450px) and (max-width: 380px) {
   .first-page__main .first-page__main-inner .first-page__main-title {
     font-size: 30px;
     width: 100%;
     text-align: center;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 450px) and (max-width: 410px) {
   .footer__author {
     display: flex;
     flex-flow: column;
