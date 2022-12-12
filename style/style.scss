@@ -264,10 +264,18 @@
 			border-radius: 30px;
 			background: none;
 			@extend %font;
+			&:hover {
+				@extend %hover;
+				background: rgba(0, 0, 0, 0.1);
+			}
 		}
 		._button_black {
 			color: #ffffff;
 			background: #2f2f2f;
+			&:hover {
+				@extend %hover;
+				background: rgba(47, 47, 47, 0.8);
+			}
 		}
 	}
 }
@@ -362,6 +370,9 @@
 	width: calc(166 / 477 * 100%);
 	min-width: 100px;
 	height: calc(44 / 477 * 100%);
+	&:hover {
+		@extend %hover;
+	}
 }
 
 .footer__main {
@@ -411,7 +422,7 @@
 				transition: 0.5s;
 			}
 			:hover {
-				opacity: 0.8;
+				@extend %hover;
 			}
 			& a {
 				text-decoration: none;
@@ -463,6 +474,7 @@
 			:hover {
 				text-decoration: underline;
 				color: rgba(37, 6, 73, 0.8);
+				@extend %hover;
 			}
 			&:first-child {
 				font-size: 20px;

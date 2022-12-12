@@ -97,6 +97,11 @@ select {
   font-weight: 400;
 }
 
+.footer__links .footer__links-list .footer__links-item :hover, .footer__main .footer__new-reg .footer__new-reg-mail :hover, .artists__names-item-button-second:hover, .artists_flex-wrap .artists__names-list ._button_black:hover, .artists_flex-wrap .artists__names-list .artists__names-item-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 ._container {
   margin: 0 auto;
   max-width: 1200px;
@@ -352,9 +357,15 @@ select {
   border-radius: 30px;
   background: none;
 }
+.artists_flex-wrap .artists__names-list .artists__names-item-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
 .artists_flex-wrap .artists__names-list ._button_black {
   color: #ffffff;
   background: #2f2f2f;
+}
+.artists_flex-wrap .artists__names-list ._button_black:hover {
+  background: rgba(47, 47, 47, 0.8);
 }
 
 .artists__names-visual {
@@ -446,7 +457,6 @@ select {
   min-width: 100px;
   height: 9.2243186583%;
 }
-
 .footer__main {
   display: grid;
   grid-template-columns: 20% 37% 43%;
@@ -493,9 +503,6 @@ select {
   height: 40px;
   border-radius: 20px;
   transition: 0.5s;
-}
-.footer__main .footer__new-reg .footer__new-reg-mail :hover {
-  opacity: 0.8;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail a {
   text-decoration: none;
@@ -768,7 +775,7 @@ select {
     color: #ffffff;
     width: 70%;
     min-width: 250px;
-    height: 15%;
+    height: 70px;
   }
 }
 @media (max-width: 670px) {
@@ -777,6 +784,7 @@ select {
     line-height: 40px;
     letter-spacing: 0.48px;
     margin-bottom: 1%;
+    text-align: center;
   }
   .artists__title .artists__sub-text {
     font-size: 15px;
