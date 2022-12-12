@@ -80,18 +80,18 @@ select {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/outfit-v6-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("./fonts/outfit-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("./fonts/outfit-v6-latin-regular.woff") format("woff"), url("./fonts/outfit-v6-latin-regular.ttf") format("truetype"), url("./fonts/outfit-v6-latin-regular.svg#Outfit") format("svg"); /* Legacy iOS */
+  src: url("../style/fonts/outfit-v6-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../style/fonts/outfit-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../style/fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("../style/fonts/outfit-v6-latin-regular.woff") format("woff"), url("../style/fonts/outfit-v6-latin-regular.ttf") format("truetype"), url("../style/fonts/outfit-v6-latin-regular.svg#Outfit") format("svg"); /* Legacy iOS */
 }
 /* outfit-700 - latin */
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/outfit-v6-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("./fonts/outfit-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/outfit-v6-latin-700.woff2") format("woff2"), url("./fonts/outfit-v6-latin-700.woff") format("woff"), url("./fonts/outfit-v6-latin-700.ttf") format("truetype"), url("./fonts/outfit-v6-latin-700.svg#Outfit") format("svg"); /* Legacy iOS */
+  src: url("../style/fonts/outfit-v6-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../style/fonts/outfit-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../style/fonts/outfit-v6-latin-700.woff2") format("woff2"), url("../style/fonts/outfit-v6-latin-700.woff") format("woff"), url("../style/fonts/outfit-v6-latin-700.ttf") format("truetype"), url("../style/fonts/outfit-v6-latin-700.svg#Outfit") format("svg"); /* Legacy iOS */
 }
-.first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1), .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main .first-page__main-inner .first-page__main-sub, .first-page__main .first-page__main-inner .first-page__main-title, .first-page__main .first-page__main-inner .first-page__main-upper {
+.artists__names-item-button-second, .artists__names-main-second, .artists__names-prof-title-second, .artists__names-prof-name_second, .artists__names-description .artists__names-main, .artists__names-description .artists__names-prof-title, .artists__names-description .artists__names-prof-name, .artists_flex-wrap .artists__names-list .artists__names-item-button, .artists__title .artists__sub-text, .artists__title .artists__catch-phrase, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1), .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main .first-page__main-inner .first-page__main-sub, .first-page__main .first-page__main-inner .first-page__main-title, .first-page__main .first-page__main-inner .first-page__main-upper {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
@@ -101,6 +101,10 @@ select {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 300px;
+}
+
+.content {
+  margin-bottom: 10.8333333333%;
 }
 
 .wrapper {
@@ -291,10 +295,159 @@ select {
   background-size: contain;
   height: 15vh;
   width: 100vw;
+  margin-bottom: 10.6666666667%;
+}
+
+.artists__title {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: #2f2f2f;
+  margin-bottom: 6%;
+}
+.artists__title .artists__catch-phrase {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0.48px;
+  margin-bottom: 2.0833333333%;
+}
+.artists__title .artists__sub-text {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.artists_flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 7%;
+}
+.artists_flex-wrap .artists__names-list {
+  width: 50%;
+}
+.artists_flex-wrap .artists__names-list .artists__names {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6.6666666667%;
+}
+.artists_flex-wrap .artists__names-list .artists__names-item-link {
+  width: 29.8333333333%;
+  margin-right: 8px;
+}
+.artists_flex-wrap .artists__names-list .artists__names-item-link:last-child {
+  margin-right: 0;
+}
+.artists_flex-wrap .artists__names-list .artists__names-item-button {
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.48px;
+  color: #2f2f2f;
+  border-radius: 30px;
+  background: none;
+}
+.artists_flex-wrap .artists__names-list ._button_black {
+  color: #ffffff;
+  background: #2f2f2f;
+}
+
+.artists__names-visual {
+  width: 100%;
+}
+.artists__names-visual .artists__names-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.artists__names-description {
+  width: 49%;
+}
+
+.artists__names-description {
+  padding-top: 13.3333333333%;
+  max-width: 39.75%;
+}
+.artists__names-description .artists__names-prof-name {
+  margin-bottom: 1.1666666667%;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.48px;
+  color: #ff7f96;
+}
+.artists__names-description .artists__names-prof-title {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.48px;
+  color: #2f2f2f;
+  margin-bottom: 1.75%;
+}
+.artists__names-description .artists__names-main {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  color: #2f2f2f;
+}
+
+.artists__names-description-second {
+  width: 45%;
+  padding-top: 17%;
+}
+
+._artists__names__second {
+  padding-top: 12.25%;
+  padding-right: 5.25%;
+  width: 50%;
+}
+
+.artists__names-prof-name_second {
+  font-size: 35px;
+  line-height: 36px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  margin-bottom: 7px;
+}
+
+.artists__names-prof-title-second {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0.48px;
+  color: #2f2f2f;
+  margin-bottom: 7.9664570231%;
+}
+
+.artists__names-main-second {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  color: #2f2f2f;
+  margin-bottom: 6.7085953878%;
+}
+
+.artists__names-item-button-second {
+  background: #2f2f2f;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  color: #ffffff;
+  width: 34.8008385744%;
+  min-width: 100px;
+  height: 9.2243186583%;
 }
 
 .footer__main {
-  padding-top: 8.1666666667%;
   display: grid;
   grid-template-columns: 20% 37% 43%;
   margin: 0 auto;
@@ -414,7 +567,7 @@ select {
 .footer__author {
   display: flex;
   justify-content: space-between;
-  width: 87%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 47px;
   font-family: "Outfit";
@@ -438,8 +591,35 @@ select {
   color: #ff7f96;
 }
 
+@media (max-width: 1000px) {
+  .artists__names-description {
+    padding-top: 4.1666666667%;
+    padding-left: 5px;
+    max-width: 50%;
+  }
+  .artists__names-prof-title {
+    font-size: 30px;
+  }
+  .artists__names-description .artists__names-main {
+    font-size: 15px;
+  }
+  .artists__names-prof-name_second {
+    font: 30px;
+  }
+  .artists__names-prof-title-second {
+    font-size: 30px;
+    margin-bottom: 3%;
+  }
+  .artists__names-main-second {
+    font-size: 15px;
+  }
+  .artists__names-description-second {
+    padding-top: 12%;
+    width: 50%;
+  }
+}
 @media (max-width: 900px) {
-  .first-page__main .first-page__main-inner .first-page__main-upper, .first-page__main .first-page__main-inner .first-page__main-title, .first-page__main .first-page__main-inner .first-page__main-sub, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1) {
+  .first-page__main .first-page__main-inner .first-page__main-upper, .first-page__main .first-page__main-inner .first-page__main-title, .first-page__main .first-page__main-inner .first-page__main-sub, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1), .artists__title .artists__catch-phrase, .artists__title .artists__sub-text, .artists_flex-wrap .artists__names-list .artists__names-item-button, .artists__names-description .artists__names-prof-name, .artists__names-description .artists__names-prof-title, .artists__names-description .artists__names-main, .artists__names-prof-name_second, .artists__names-prof-title-second, .artists__names-main-second, .artists__names-item-button-second {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
@@ -550,6 +730,58 @@ select {
   }
   .footer__links .footer__links-list .footer__links-item:first-child {
     font-size: 16px;
+  }
+}
+@media (max-width: 750px) {
+  .artists_flex-wrap {
+    flex-wrap: nowrap;
+    flex-flow: column;
+    align-items: center;
+  }
+  .artists_flex-wrap .artists__names-list {
+    width: 90%;
+  }
+  .artists__names-description {
+    max-width: 90%;
+    width: 90%;
+    text-align: center;
+  }
+  ._artists__names__second {
+    padding-top: 5%;
+    padding-right: 0;
+    width: 90%;
+  }
+  .artists__names-description-second {
+    padding-top: 5%;
+    width: 90%;
+    text-align: center;
+  }
+  .artists__names-main-second {
+    margin-bottom: 3%;
+  }
+  .artists__names-item-button-second {
+    background: #2f2f2f;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    color: #ffffff;
+    width: 70%;
+    min-width: 250px;
+    height: 15%;
+  }
+}
+@media (max-width: 670px) {
+  .artists__title .artists__catch-phrase {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.48px;
+    margin-bottom: 1%;
+  }
+  .artists__title .artists__sub-text {
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
   }
 }
 @media (max-width: 780px) {

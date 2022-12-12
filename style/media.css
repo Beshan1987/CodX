@@ -1,3 +1,30 @@
+@media (max-width: 1000px) {
+  .artists__names-description {
+    padding-top: 4.1666666667%;
+    padding-left: 5px;
+    max-width: 50%;
+  }
+  .artists__names-prof-title {
+    font-size: 30px;
+  }
+  .artists__names-description .artists__names-main {
+    font-size: 15px;
+  }
+  .artists__names-prof-name_second {
+    font: 30px;
+  }
+  .artists__names-prof-title-second {
+    font-size: 30px;
+    margin-bottom: 3%;
+  }
+  .artists__names-main-second {
+    font-size: 15px;
+  }
+  .artists__names-description-second {
+    padding-top: 12%;
+    width: 50%;
+  }
+}
 @media (max-width: 900px) {
   .first-page__main {
     padding-top: 1.3333333333%;
@@ -105,6 +132,58 @@
   }
   .footer__links .footer__links-list .footer__links-item:first-child {
     font-size: 16px;
+  }
+}
+@media (max-width: 750px) {
+  .artists_flex-wrap {
+    flex-wrap: nowrap;
+    flex-flow: column;
+    align-items: center;
+  }
+  .artists_flex-wrap .artists__names-list {
+    width: 90%;
+  }
+  .artists__names-description {
+    max-width: 90%;
+    width: 90%;
+    text-align: center;
+  }
+  ._artists__names__second {
+    padding-top: 5%;
+    padding-right: 0;
+    width: 90%;
+  }
+  .artists__names-description-second {
+    padding-top: 5%;
+    width: 90%;
+    text-align: center;
+  }
+  .artists__names-main-second {
+    margin-bottom: 3%;
+  }
+  .artists__names-item-button-second {
+    background: #2f2f2f;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    color: #ffffff;
+    width: 70%;
+    min-width: 250px;
+    height: 15%;
+  }
+}
+@media (max-width: 670px) {
+  .artists__title .artists__catch-phrase {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.48px;
+    margin-bottom: 1%;
+  }
+  .artists__title .artists__sub-text {
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
   }
 }
 @media (max-width: 780px) {

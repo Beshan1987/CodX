@@ -3,14 +3,14 @@
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/outfit-v6-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("./fonts/outfit-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("./fonts/outfit-v6-latin-regular.woff") format("woff"), url("./fonts/outfit-v6-latin-regular.ttf") format("truetype"), url("./fonts/outfit-v6-latin-regular.svg#Outfit") format("svg"); /* Legacy iOS */
+  src: url("../style/fonts/outfit-v6-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../style/fonts/outfit-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../style/fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("../style/fonts/outfit-v6-latin-regular.woff") format("woff"), url("../style/fonts/outfit-v6-latin-regular.ttf") format("truetype"), url("../style/fonts/outfit-v6-latin-regular.svg#Outfit") format("svg"); /* Legacy iOS */
 }
 /* outfit-700 - latin */
 @font-face {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/outfit-v6-latin-700.eot"); /* IE9 Compat Modes */
-  src: local(""), url("./fonts/outfit-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("./fonts/outfit-v6-latin-700.woff2") format("woff2"), url("./fonts/outfit-v6-latin-700.woff") format("woff"), url("./fonts/outfit-v6-latin-700.ttf") format("truetype"), url("./fonts/outfit-v6-latin-700.svg#Outfit") format("svg"); /* Legacy iOS */
+  src: url("../style/fonts/outfit-v6-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../style/fonts/outfit-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../style/fonts/outfit-v6-latin-700.woff2") format("woff2"), url("../style/fonts/outfit-v6-latin-700.woff") format("woff"), url("../style/fonts/outfit-v6-latin-700.ttf") format("truetype"), url("../style/fonts/outfit-v6-latin-700.svg#Outfit") format("svg"); /* Legacy iOS */
 }/*# sourceMappingURL=fonts.css.map */
