@@ -151,7 +151,7 @@
 		.first-page__main-imgfirst
 		.first-page__main-imgfirst-inner {
 		top: 10%;
-		left: 65%;
+		left: 73%;
 	}
 	.first-page__main-inner-img
 		.first-page__main-imgfirst-woman
@@ -293,8 +293,12 @@
 		grid-template-columns: 100%;
 		grid-template-rows: 50% 50%;
 	}
-	.footer__main .footer__new-reg .footer__new-reg-title {
-		display: none;
+	.footer__main .footer__new-reg .footer__new-reg-title{
+		text-align: center;
+   		padding-top: 10px;
+	}
+	.footer__main .footer__new-reg .footer__new-reg-sub{
+		display:none;
 	}
 	.footer__main .footer__new-reg {
 	}
