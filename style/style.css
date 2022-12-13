@@ -27,6 +27,9 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -36,6 +39,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding: 0 10px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -48,6 +54,11 @@ ol[class] {
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Упрощаем работу с изображениями */
@@ -91,13 +102,7 @@ select {
   src: url("../style/fonts/outfit-v6-latin-700.eot"); /* IE9 Compat Modes */
   src: local(""), url("../style/fonts/outfit-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../style/fonts/outfit-v6-latin-700.woff2") format("woff2"), url("../style/fonts/outfit-v6-latin-700.woff") format("woff"), url("../style/fonts/outfit-v6-latin-700.ttf") format("truetype"), url("../style/fonts/outfit-v6-latin-700.svg#Outfit") format("svg"); /* Legacy iOS */
 }
-.artists__names-item-button-second, .artists__names-main-second, .artists__names-prof-title-second, .artists__names-prof-name_second, .artists__names-description .artists__names-main, .artists__names-description .artists__names-prof-title, .artists__names-description .artists__names-prof-name, .artists_flex-wrap .artists__names-list .artists__names-item-button, .artists__title .artists__sub-text, .artists__title .artists__catch-phrase, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1), .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main .first-page__main-inner .first-page__main-sub, .first-page__main .first-page__main-inner .first-page__main-title, .first-page__main .first-page__main-inner .first-page__main-upper {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
-}
-
-.footer__links .footer__links-list .footer__links-item :hover, .footer__main .footer__new-reg .footer__new-reg-mail :hover, .artists__names-item-button-second:hover, .artists_flex-wrap .artists__names-list ._button_black:hover, .artists_flex-wrap .artists__names-list .artists__names-item-button:hover {
+.footer__links .footer__links-list .footer__links-item :hover, .footer__main .footer__new-reg .footer__new-reg-mail :hover, .artists__names-item-button-second:hover, .header__menu-list a:hover {
   opacity: 0.8;
   cursor: pointer;
 }
@@ -121,6 +126,10 @@ select {
   max-width: 1200px;
 }
 
+._page-first__footer {
+  max-width: none;
+}
+
 .header {
   margin-top: 2.25%;
   box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
@@ -133,10 +142,13 @@ select {
   height: 68px;
   align-items: center;
   justify-content: space-between;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
   border-radius: 30px;
+}
+.header__menu-list a {
+  height: 18px;
+}
+.header__menu-list a:hover {
+  text-decoration: underline;
 }
 
 .header__menu-logo {
@@ -157,13 +169,13 @@ select {
   line-height: 16px;
   letter-spacing: 0.48px;
   color: #222222;
-  text-decoration: none;
 }
 
 .header__menu-list-socials {
   display: grid;
   grid-template-columns: 15% 15% 15% 45%;
   width: 40%;
+  height: 68px;
   align-items: center;
   justify-content: start;
   justify-items: end;
@@ -179,14 +191,14 @@ select {
   line-height: 14px;
   letter-spacing: 0.48px;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .first-page__main {
   padding-top: 1.3333333333%;
   display: flex;
-  height: 510px;
+  height: 527px;
   margin-bottom: 25.6666666667%;
+  color: #2f2f2f;
 }
 .first-page__main .first-page__main-inner {
   display: flex;
@@ -205,14 +217,12 @@ select {
   font-size: 64px;
   line-height: 64px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
   margin-bottom: 4.6468401487%;
 }
 .first-page__main .first-page__main-inner .first-page__main-sub {
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
 }
 
 .first-page__main-inner-img {
@@ -232,6 +242,7 @@ select {
   left: 0;
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
+  padding-left: 5px;
   display: flex;
   width: 105px;
   background: rgba(255, 255, 255, 0.85);
@@ -244,10 +255,7 @@ select {
   top: 4.9230769231%;
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-imgfirst-names {
-  padding-left: 5px;
-}
-.first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-imgfirst-names .first-page__main-name {
-  width: 22px;
+  display: flex;
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner {
   display: flex;
@@ -255,7 +263,11 @@ select {
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
+  justify-content: center;
+  padding-left: 10px;
+}
+.first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner :last-child {
+  font-size: 9px;
 }
 
 .first-page__main-inner-img {
@@ -287,7 +299,8 @@ select {
   left: -19.512195122%;
 }
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-imgfirst-names {
-  padding-left: 5px;
+  padding-left: 7px;
+  display: flex;
 }
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-imgfirst-names .first-page__main-name {
   width: 41px;
@@ -309,16 +322,19 @@ select {
   background: url(./img/BG_first_footer.png) repeat-x;
   background-position: center;
   background-size: contain;
-  height: 15vh;
+  height: 150px;
   width: 100vw;
   margin-bottom: 10.6666666667%;
+}
+
+.artists_container {
+  color: #2f2f2f;
 }
 
 .artists__title {
   display: flex;
   flex-flow: column;
   align-items: center;
-  color: #2f2f2f;
   margin-bottom: 6%;
 }
 .artists__title .artists__catch-phrase {
@@ -343,12 +359,12 @@ select {
   margin-bottom: 7%;
 }
 .artists_flex-wrap .artists__names-list {
-  width: 50%;
+  width: 46%;
 }
 .artists_flex-wrap .artists__names-list .artists__names {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 6.6666666667%;
+  margin-bottom: 11.4130434783%;
 }
 .artists_flex-wrap .artists__names-list .artists__names-item-link {
   width: 29.8333333333%;
@@ -364,7 +380,6 @@ select {
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
   border-radius: 30px;
   background: none;
 }
@@ -397,7 +412,7 @@ select {
   max-width: 39.75%;
 }
 .artists__names-description .artists__names-prof-name {
-  margin-bottom: 1.1666666667%;
+  margin-bottom: 2.9350104822%;
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.48px;
@@ -410,14 +425,12 @@ select {
   font-size: 36px;
   line-height: 36px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
-  margin-bottom: 1.75%;
+  margin-bottom: 4.4025157233%;
 }
 .artists__names-description .artists__names-main {
   font-size: 20px;
   line-height: 26px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
 }
 
 .artists__names-description-second {
@@ -428,7 +441,7 @@ select {
 ._artists__names__second {
   padding-top: 12.25%;
   padding-right: 5.25%;
-  width: 50%;
+  width: 49%;
 }
 
 .artists__names-prof-name_second {
@@ -436,7 +449,6 @@ select {
   line-height: 36px;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-  color: #2f2f2f;
   margin-bottom: 7px;
 }
 
@@ -444,7 +456,6 @@ select {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
   margin-bottom: 7.9664570231%;
 }
 
@@ -453,7 +464,6 @@ select {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
   margin-bottom: 6.7085953878%;
 }
 
@@ -464,19 +474,33 @@ select {
   line-height: 16px;
   letter-spacing: 0.48px;
   color: #ffffff;
-  width: 34.8008385744%;
+  width: 166px;
   min-width: 100px;
-  height: 9.2243186583%;
+  height: 44px;
 }
+.artists__names-item-link {
+  display: flex;
+  justify-content: end;
+}
+
+.BG_artists_whole {
+  background: url(./img/BG_whole_new.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  height: 250px;
+  width: 100vw;
+}
+
+.footer_container {
+  color: #2f2f2f;
+}
+
 .footer__main {
   display: grid;
   grid-template-columns: 20% 37% 43%;
   margin: 0 auto;
   margin-bottom: 10.4166666667%;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
-  height: 240px;
+  height: 160px;
   min-height: 20%;
 }
 .footer__main .footer__socials {
@@ -493,19 +517,17 @@ select {
 }
 .footer__main .footer__new-reg {
   display: grid;
-  grid-template-rows: 25% 45% 30%;
+  grid-template-rows: 22% 48% 30%;
 }
 .footer__main .footer__new-reg .footer__new-reg-title {
   font-size: 35px;
   line-height: 29px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
 }
 .footer__main .footer__new-reg .footer__new-reg-sub {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail button {
   background-color: #2f2f2f;
@@ -516,9 +538,6 @@ select {
   transition: 0.5s;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail a {
-  text-decoration: none;
-  font-family: "Outfit";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -558,9 +577,6 @@ select {
   display: grid;
   grid-template-columns: 50% 50%;
   justify-items: center;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
 }
 .footer__links .footer__links-list {
   display: grid;
@@ -570,13 +586,12 @@ select {
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
-  text-decoration: none;
+  color: inherit;
   transition: 0.3s;
 }
 .footer__links .footer__links-list .footer__links-item :hover {
-  text-decoration: underline;
   color: rgba(37, 6, 73, 0.8);
+  text-decoration: underline;
 }
 .footer__links .footer__links-list .footer__links-item:first-child {
   font-size: 20px;
@@ -588,25 +603,24 @@ select {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 47px;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
   align-items: center;
 }
 .footer__author .footer__author-produced {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
 }
 .footer__author .footer__author-name span {
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.48px;
-  color: #2f2f2f;
 }
 .footer__author .footer__author-name span:nth-child(2n) {
   color: #ff7f96;
+}
+
+.footer__main .footer__new-reg .footer__new-reg-title {
+  font-size: calc(35px + 0.5vw);
 }
 
 @media (max-width: 1000px) {
@@ -637,11 +651,6 @@ select {
   }
 }
 @media (max-width: 900px) {
-  .first-page__main .first-page__main-inner .first-page__main-upper, .first-page__main .first-page__main-inner .first-page__main-title, .first-page__main .first-page__main-inner .first-page__main-sub, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :nth-child(1), .artists__title .artists__catch-phrase, .artists__title .artists__sub-text, .artists_flex-wrap .artists__names-list .artists__names-item-button, .artists__names-description .artists__names-prof-name, .artists__names-description .artists__names-prof-title, .artists__names-description .artists__names-main, .artists__names-prof-name_second, .artists__names-prof-title-second, .artists__names-main-second, .artists__names-item-button-second {
-    font-family: "Outfit";
-    font-style: normal;
-    font-weight: 400;
-  }
   .first-page__main {
     flex-wrap: wrap;
     height: 800px;
@@ -686,8 +695,8 @@ select {
     grid-template-columns: 10% 10% 10% 60%;
   }
   .footer__main {
-    height: 240px;
-    min-height: 20%;
+    height: 160;
+    min-height: 13.3333333333%;
     grid-template-columns: 24% 35% 39%;
   }
   .footer__main .footer__socials {
@@ -706,8 +715,8 @@ select {
     line-height: 25px;
   }
   .footer__main .footer__new-reg .footer__new-reg-sub {
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 13px;
+    line-height: 13px;
   }
   .footer__links .footer__links-list {
     grid-template-rows: 25% 13% 13% 13%;
@@ -723,7 +732,7 @@ select {
 @media (max-width: 750px) {
   .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
     top: 10%;
-    left: 65%;
+    left: 73%;
   }
   .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
     top: 10%;
@@ -733,16 +742,21 @@ select {
     font-size: 40px;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 430px) {
   .first-page__main-inner-img .first-page__main-imgfirst {
     top: 0;
     right: 0;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    min-width: 95%;
   }
   .first-page__main-inner-img .first-page__main-imgfirst-woman {
     right: 0;
     bottom: 0;
     background-size: cover;
+    left: 5%;
+    min-width: 95%;
+    height: 75%;
   }
   .first-page__main {
     min-width: 320px;
@@ -804,6 +818,10 @@ select {
 @media (max-width: 780px) {
   .footer__main .footer__new-reg .footer__new-reg-mail input {
     width: 80%;
+    margin-bottom: 5px;
+  }
+  .footer__main .footer__new-reg .footer__new-reg-mail button {
+    width: 80%;
   }
   .footer__main .footer__socials .footer__join-text {
     display: none;
@@ -854,6 +872,10 @@ select {
     grid-template-rows: 50% 50%;
   }
   .footer__main .footer__new-reg .footer__new-reg-title {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .footer__main .footer__new-reg .footer__new-reg-sub {
     display: none;
   }
   .footer__main .footer__new-reg .footer__new-reg-mail {

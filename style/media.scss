@@ -80,16 +80,10 @@
 	.header__menu-list-socials {
 		width: 45%;
 		grid-template-columns: 10% 10% 10% 60%;
-		.header__menu-button-inner {
-			.header__menu-button {
-				.header__menu-button-link {
-				}
-			}
-		}
 	}
 	.footer__main {
-		height: 240px;
-		min-height: calc(240 / 1200 * 100%);
+		height: 160;
+		min-height: calc(160 / 1200 * 100%);
 		grid-template-columns: 24% 35% 39%;
 		.footer__socials {
 			display: grid;
@@ -110,8 +104,8 @@
 				line-height: 25px;
 			}
 			.footer__new-reg-sub {
-				font-size: 15px;
-				line-height: 15px;
+				font-size: 13px;
+				line-height: 13px;
 			}
 			.footer__new-reg-mail {
 				button {
@@ -168,18 +162,19 @@
 	.first-page__main-inner-img .first-page__main-imgfirst {
 		top: 0;
 		right: 0;
-		background-size: cover;
+		background-size: contain;
+		background-position: center;
+		min-width: 95%;
 	}
 	.first-page__main-inner-img .first-page__main-imgfirst-woman {
 		right: 0;
 		bottom: 0;
 		background-size: cover;
-		left: 10px;
-    		min-width: 335px;
+		left: 5%;
+		min-width: 95%;
+		height: 75%;
 	}
-	.first-page__main-inner-img .first-page__main-imgfirst{
-		min-width: 325px;
-	}
+
 	.first-page__main {
 		min-width: 320px;
 	}
@@ -245,7 +240,8 @@
 		width: 80%;
 		margin-bottom: 5px;
 	}
-	.footer__main .footer__new-reg .footer__new-reg-mail button{
+
+	.footer__main .footer__new-reg .footer__new-reg-mail button {
 		width: 80%;
 	}
 	.footer__main .footer__socials .footer__join-text {
@@ -300,12 +296,12 @@
 		grid-template-columns: 100%;
 		grid-template-rows: 50% 50%;
 	}
-	.footer__main .footer__new-reg .footer__new-reg-title{
+	.footer__main .footer__new-reg .footer__new-reg-title {
 		text-align: center;
-   		padding-top: 10px;
+		padding-top: 10px;
 	}
-	.footer__main .footer__new-reg .footer__new-reg-sub{
-		display:none;
+	.footer__main .footer__new-reg .footer__new-reg-sub {
+		display: none;
 	}
 	.footer__main .footer__new-reg {
 	}

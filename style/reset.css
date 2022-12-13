@@ -27,6 +27,9 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -36,6 +39,9 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   padding: 0 10px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -48,6 +54,11 @@ ol[class] {
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Упрощаем работу с изображениями */
