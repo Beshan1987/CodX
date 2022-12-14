@@ -106,8 +106,8 @@
 			color: #82cbac;
 		}
 		.first-page__main-title {
-			font-size: 64px;
-			line-height: 64px;
+			font-size: calc(25px + 4vw);
+   			line-height: calc(25px + 4vw);
 			letter-spacing: 0.48px;
 
 			margin-bottom: calc(25 / 538 * 100%);
@@ -233,8 +233,8 @@
 
 	margin-bottom: calc(72 / 1200 * 100%);
 	.artists__catch-phrase {
-		font-size: 64px;
-		line-height: 64px;
+		font-size: calc(25px + 4vw);
+   		line-height: calc(25px + 4vw);
 		letter-spacing: 0.48px;
 		margin-bottom: calc(25 / 1200 * 100%);
 	}
@@ -318,15 +318,15 @@
 		margin: 0;
 		display: flex;
 		flex-flow: column;
-		font-size: 36px;
-		line-height: 36px;
+		font-size: calc(18px + 1.5vw);
+  		line-height: calc(18px + 1.5vw);
 		letter-spacing: 0.48px;
 
 		margin-bottom: calc(21 / 477 * 100%);
 	}
 	.artists__names-main {
-		font-size: 20px;
-		line-height: 26px;
+		font-size: calc(15px + 0.4vw);
+  		line-height: calc(20px + 0.4vw);
 		letter-spacing: 0.48px;
 	}
 }
@@ -341,16 +341,16 @@
 }
 
 .artists__names-prof-name_second {
-	font-size: 35px;
-	line-height: 36px;
+	font-size: calc(16px + 2vw);
+  	line-height: calc(16px + 2vw);
 	letter-spacing: 0.48px;
 	text-transform: uppercase;
 
 	margin-bottom: 7px;
 }
 .artists__names-prof-title-second {
-	font-size: 48px;
-	line-height: 48px;
+	font-size: calc(24px + 2vw);
+   	line-height: calc(24px + 2vw);
 	letter-spacing: 0.48px;
 
 	margin-bottom: calc(38 / 477 * 100%);
@@ -358,8 +358,8 @@
 
 .artists__names-main-second {
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 26px;
+	font-size: calc(15px + 0.4vw);
+  	line-height: calc(20px + 0.4vw);
 	letter-spacing: 0.48px;
 
 	margin-bottom: calc(32 / 477 * 100%);
