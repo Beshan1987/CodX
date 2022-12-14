@@ -414,7 +414,7 @@
 		display: grid;
 		grid-template-rows: 22% 48% 30%;
 		.footer__new-reg-title {
-			font-size: 35px;
+			    font-size: calc(16px + 1vw);
 			line-height: 29px;
 			letter-spacing: 0.48px;
 		}
@@ -512,8 +512,5 @@
 	}
 }
 
-.footer__main .footer__new-reg .footer__new-reg-title {
-	font-size: calc(35px + 0.5vw);
-}
 
 @import "media";
