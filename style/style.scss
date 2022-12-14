@@ -19,10 +19,6 @@
 	max-width: 1200px;
 }
 
-._page-first__footer {
-	max-width: none;
-}
-
 .header {
 	margin-top: calc(27 / 1200 * 100%);
 	box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
@@ -386,9 +382,7 @@
 }
 
 .BG_artists_whole {
-	background: url(./img/BG_whole_new.png);
-	background-repeat: repeat-x;
-	background-position: center;
+	background: url(./img/BG_whole_new.png) repeat-x center;
 	height: 250px;
 	width: 100vw;
 }
