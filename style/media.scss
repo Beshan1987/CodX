@@ -4,23 +4,11 @@
 		padding-left: 5px;
 		max-width: 50%;
 	}
-	.artists__names-prof-title {
-		font-size: 30px;
-	}
-	.artists__names-description .artists__names-main {
-		font-size: 15px;
-	}
-	.artists__names-prof-name_second {
-		font: 30px;
-	}
+	
 	.artists__names-prof-title-second {
-		font-size: 30px;
 		margin-bottom: 3%;
 	}
-
-	.artists__names-main-second {
-		font-size: 15px;
-	}
+	
 	.artists__names-description-second {
 		padding-top: 12%;
 		width: 50%;
@@ -99,26 +87,7 @@
 		}
 		.footer__new-reg {
 			grid-template-rows: 25% 30% 30%;
-			.footer__new-reg-title {
-				font-size: 25px;
-				line-height: 25px;
-			}
-			.footer__new-reg-sub {
-				font-size: 13px;
-				line-height: 13px;
-			}
-			.footer__new-reg-mail {
-				button {
-				}
-				:hover {
-				}
-				& a {
-				}
-				input {
-					&::placeholder {
-					}
-				}
-			}
+			
 		}
 	}
 
@@ -207,33 +176,9 @@
 	.artists__names-main-second {
 		margin-bottom: 3%;
 	}
-	.artists__names-item-button-second {
-		background: #2f2f2f;
-		font-weight: 700;
-		font-size: 25px;
-		line-height: 25px;
-		letter-spacing: 0.48px;
-		color: #ffffff;
-		width: 70%;
-		min-width: 250px;
-		height: 70px;
-	}
+		
 }
 
-@media (max-width: 670px) {
-	.artists__title .artists__catch-phrase {
-		font-size: 40px;
-		line-height: 40px;
-		letter-spacing: 0.48px;
-		margin-bottom: 1%;
-		text-align: center;
-	}
-	.artists__title .artists__sub-text {
-		font-size: 15px;
-		line-height: 15px;
-		text-align: center;
-	}
-}
 
 @media (max-width: 780px) {
 	.footer__main .footer__new-reg .footer__new-reg-mail input {
