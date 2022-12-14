@@ -470,8 +470,8 @@
 		grid-template-rows: 25% 18% 18% 18%;
 		.footer__links-item {
 			.footer__links-item-link {
-				font-size: 16px;
-				line-height: 16px;
+				font-size: calc(10px + 0.5vw);
+    				line-height: calc(10px + 0.5vw);
 				letter-spacing: 0.48px;
 				color: inherit;
 				transition: 0.3s;
@@ -482,7 +482,7 @@
 				text-decoration: underline;
 			}
 			&:first-child {
-				font-size: 20px;
+				font-size: calc(14px + 0.5vw);
 			}
 		}
 	}
