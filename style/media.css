@@ -4,21 +4,8 @@
     padding-left: 5px;
     max-width: 50%;
   }
-  .artists__names-prof-title {
-    font-size: 30px;
-  }
-  .artists__names-description .artists__names-main {
-    font-size: 15px;
-  }
-  .artists__names-prof-name_second {
-    font: 30px;
-  }
   .artists__names-prof-title-second {
-    font-size: 30px;
     margin-bottom: 3%;
-  }
-  .artists__names-main-second {
-    font-size: 15px;
   }
   .artists__names-description-second {
     padding-top: 12%;
@@ -69,39 +56,16 @@
     width: 45%;
     grid-template-columns: 10% 10% 10% 60%;
   }
-  .footer__main {
-    height: 160;
-    min-height: 13.3333333333%;
-    grid-template-columns: 24% 35% 39%;
-  }
-  .footer__main .footer__socials {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 45% 15% 15%;
-  }
-  .footer__main .footer__socials .footer__join-text {
-    font-size: 15px;
-  }
+}
+@media (max-width: 950px) {
   .footer__main .footer__new-reg {
-    grid-template-rows: 25% 30% 30%;
+    width: 45%;
   }
-  .footer__main .footer__new-reg .footer__new-reg-title {
-    font-size: 25px;
-    line-height: 25px;
+  .footer__links {
+    width: 25%;
   }
-  .footer__main .footer__new-reg .footer__new-reg-sub {
-    font-size: 13px;
-    line-height: 13px;
-  }
-  .footer__links .footer__links-list {
-    grid-template-rows: 25% 13% 13% 13%;
-  }
-  .footer__links .footer__links-list .footer__links-item .footer__links-item-link {
-    font-size: 12px;
-    line-height: 12px;
-  }
-  .footer__links .footer__links-list .footer__links-item:first-child {
-    font-size: 16px;
+  .footer__main .footer__new-reg .footer__new-reg-mail button {
+    width: 30%;
   }
 }
 @media (max-width: 750px) {
@@ -115,6 +79,44 @@
   }
   .first-page__main .first-page__main-inner .first-page__main-title {
     font-size: 40px;
+  }
+  .page-first__footer {
+    background-size: cover;
+    height: 80px;
+  }
+}
+@media (max-width: 750px) {
+  .footer__main {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .footer__main .footer__new-reg {
+    width: 90%;
+    height: 150px;
+    align-content: space-between;
+  }
+  .footer__main .footer__new-reg * {
+    text-align: center;
+  }
+  .footer__links {
+    width: 90%;
+    text-align: center;
+  }
+  .footer__main .footer__socials {
+    padding-top: 10px;
+    align-items: center;
+  }
+  .footer__author {
+    flex-flow: column;
+  }
+  .features_container {
+    flex-flow: column-reverse;
+    align-items: center;
+    max-height: none;
+  }
+  .features_container .features__visual,
+.features_container .features__main-list {
+    width: 90%;
   }
 }
 @media (max-width: 430px) {
@@ -164,48 +166,13 @@
   .artists__names-main-second {
     margin-bottom: 3%;
   }
+  .artists__names-item-link {
+    display: flex;
+    justify-content: center;
+  }
   .artists__names-item-button-second {
-    background: #2f2f2f;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 0.48px;
-    color: #ffffff;
-    width: 70%;
-    min-width: 250px;
-    height: 70px;
-  }
-}
-@media (max-width: 670px) {
-  .artists__title .artists__catch-phrase {
-    font-size: 40px;
-    line-height: 40px;
-    letter-spacing: 0.48px;
-    margin-bottom: 1%;
     text-align: center;
-  }
-  .artists__title .artists__sub-text {
-    font-size: 15px;
-    line-height: 15px;
-    text-align: center;
-  }
-}
-@media (max-width: 780px) {
-  .footer__main .footer__new-reg .footer__new-reg-mail input {
     width: 80%;
-    margin-bottom: 5px;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail button {
-    width: 80%;
-  }
-  .footer__main .footer__socials .footer__join-text {
-    display: none;
-  }
-  .page-first__footer {
-    background: url(./img/BG_first_footer.png) repeat-x;
-    background-position: center;
-    background-size: contain;
-    height: 150px;
   }
 }
 @media (max-width: 600px) {
@@ -224,72 +191,6 @@
   .header__menu-logo .header__menu-list .header__menu-item-link {
     font-size: 10px;
   }
-  .footer__main {
-    grid-template-columns: 100%;
-    grid-template-rows: 31% 26% 38%;
-  }
-  .footer__main .footer__socials {
-    display: grid;
-    grid-template-columns: 53% 47%;
-    grid-template-rows: none;
-    justify-items: center;
-    align-items: center;
-  }
-  .footer__links .footer__links-list {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: none;
-    width: 100%;
-    justify-items: center;
-    padding-top: 5px;
-  }
-  .footer__links {
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-title {
-    text-align: center;
-    padding-top: 10px;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-sub {
-    display: none;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail {
-    padding-top: 10px;
-    display: grid;
-    grid-template-rows: 44% 45%;
-    row-gap: 10px;
-    grid-template-columns: 100%;
-  }
-  .footer__author .footer__author-name span {
-    font-size: 10px;
-    line-height: 10px;
-  }
-  .footer__author .footer__author-produced {
-    font-size: 10px;
-    line-height: 10px;
-  }
-  .page-first__footer {
-    background: url(./img/BG_first_footer.png) repeat-x;
-    background-position: center;
-    background-size: cover;
-    height: 100px;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail {
-    width: 100%;
-    height: 100px;
-    grid-template-rows: 49% 49%;
-    row-gap: 5px;
-    justify-items: center;
-    padding-top: 20px;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail button {
-    background-color: #2f2f2f;
-    font-size: 14px;
-    width: 80%;
-    height: 40px;
-    border-radius: 20px;
-    transition: 0.5s;
-  }
 }
 @media (max-width: 450px) {
   .header__menu-list-socials {
@@ -301,15 +202,5 @@
     font-size: 30px;
     width: 100%;
     text-align: center;
-  }
-}
-@media (max-width: 450px) and (max-width: 410px) {
-  .footer__author {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 90%;
-    margin-bottom: 47px;
-    align-items: center;
   }
 }/*# sourceMappingURL=media.css.map */
