@@ -541,10 +541,20 @@ select {
   justify-content: end;
 }
 
-.BG_artists_whole {
-  background: url(./img/BG_whole_new.png) repeat-x center;
-  height: 250px;
-  width: 100vw;
+.bg_artists_list {
+  background: url(./img/BG_text.png) bottom no-repeat, url(./img/BG_green.png) bottom repeat-x;
+  height: calc(120px + 1vh);
+  background-size: contain;
+  position: relative;
+}
+.bg_artists_list .bg_artist_items {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url(./img/BG_bodies.png) no-repeat bottom right;
+  background-size: contain;
+  height: calc(145px + 1vh);
+  width: 100%;
 }
 
 .footer_container {
