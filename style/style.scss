@@ -273,8 +273,8 @@
 .page-first__footer {
 	background: url(./img/BG_first_footer.png) repeat-x;
 	background-position: center;
-	background-size: contain;
-	height: calc(150px + 4vw);
+	background-size: auto 100%;
+	height: calc(100px + 4vw);
 	width: 100vw;
 	margin-bottom: calc(128 / 1200 * 100%);
 }
