@@ -310,6 +310,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	margin-bottom: calc(84 / 1200 * 100%);
+
 	.artists__names-list {
 		width: calc(552 / 1200 * 100%);
 		.artists__names {
@@ -336,6 +337,7 @@
 			border: 1px solid #2f2f2f;
 			border-radius: 30px;
 			background: none;
+			color: #2f2f2f;
 			&:hover {
 				background: rgba(0, 0, 0, 0.1);
 			}

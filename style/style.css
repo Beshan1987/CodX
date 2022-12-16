@@ -442,6 +442,7 @@ select {
   border: 1px solid #2f2f2f;
   border-radius: 30px;
   background: none;
+  color: #2f2f2f;
 }
 .artists_flex-wrap .artists__names-list .artists__names-item-button:hover {
   background: rgba(0, 0, 0, 0.1);
