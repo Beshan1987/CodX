@@ -103,9 +103,7 @@
 		background-size: cover;
 		height: 80px;
 	}
-}
 
-@media (max-width: 750px) {
 	.footer__main {
 		flex-flow: column-reverse;
 		align-items: center;
@@ -135,6 +133,9 @@
 		flex-flow: column-reverse;
 		align-items: center;
 		max-height: none;
+		:nth-child(2) {
+			margin-bottom: 10px;
+		}
 	}
 
 	.features_container .features__visual,

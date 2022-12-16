@@ -274,7 +274,7 @@
 	background: url(./img/BG_first_footer.png) repeat-x;
 	background-position: center;
 	background-size: auto 100%;
-	height: calc(100px + 4vw);
+	height: calc(100px + 3vw);
 	width: 100vw;
 	margin-bottom: calc(128 / 1200 * 100%);
 }
@@ -333,7 +333,7 @@
 			line-height: 22px;
 			text-align: center;
 			letter-spacing: 0.48px;
-
+			border: 1px solid #2f2f2f;
 			border-radius: 30px;
 			background: none;
 			&:hover {
@@ -501,8 +501,8 @@
 			letter-spacing: 0.48px;
 		}
 		.footer__new-reg-sub {
-			font-size: calc(10px + 0.4vw);
-			line-height: calc(10px + 0.4vw);
+			font-size: calc(10px + 0.35vw);
+			line-height: calc(10px + 1vw);
 			letter-spacing: 0.48px;
 		}
 		.footer__new-reg-mail {

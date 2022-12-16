@@ -325,6 +325,7 @@ select {
   justify-content: space-between;
   margin-bottom: 11.75%;
   max-height: 595px;
+  align-items: center;
 }
 .features_container .features__main-list {
   display: flex;
@@ -361,11 +362,11 @@ select {
 .features_container .features__visual {
   width: 46%;
 }
-.features_container .features__visual .features_container {
+.features_container .features__visual .features_container-img {
   position: relative;
   padding-bottom: 107.7898550725%;
 }
-.features_container .features__visual .features_container .features-img {
+.features_container .features__visual .features_container-img .features-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -378,8 +379,8 @@ select {
 .page-first__footer {
   background: url(./img/BG_first_footer.png) repeat-x;
   background-position: center;
-  background-size: contain;
-  height: calc(150px + 4vw);
+  background-size: auto 100%;
+  height: calc(100px + 3vw);
   width: 100vw;
   margin-bottom: 10.6666666667%;
 }
@@ -438,6 +439,7 @@ select {
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.48px;
+  border: 1px solid #2f2f2f;
   border-radius: 30px;
   background: none;
 }
@@ -542,9 +544,9 @@ select {
 }
 
 .bg_artists_list {
-  background: url(./img/BG_text.png) bottom no-repeat, url(./img/BG_green.png) bottom repeat-x;
-  height: calc(135px + 4vw);
-  background-size: contain;
+  background: url(./img/BG_text.png) 50% no-repeat, url(./img/BG_green.png) bottom repeat-x;
+  height: calc(135px + 10vw);
+  background-size: auto 64.9122807018%, 100% 100%;
   position: relative;
 }
 .bg_artists_list .bg_artist_items {
@@ -552,8 +554,8 @@ select {
   bottom: 0;
   right: 0;
   background: url(./img/BG_bodies.png) no-repeat bottom right;
-  background-size: contain;
-  height: calc(165px + 4vw);
+  background-size: auto 100%;
+  height: calc(165px + 10vw);
   width: 100%;
 }
 
@@ -599,8 +601,8 @@ select {
   letter-spacing: 0.48px;
 }
 .footer__main .footer__new-reg .footer__new-reg-sub {
-  font-size: calc(10px + 0.4vw);
-  line-height: calc(10px + 0.4vw);
+  font-size: calc(10px + 0.35vw);
+  line-height: calc(10px + 1vw);
   letter-spacing: 0.48px;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail button {
@@ -782,8 +784,6 @@ select {
     background-size: cover;
     height: 80px;
   }
-}
-@media (max-width: 750px) {
   .footer__main {
     flex-flow: column-reverse;
     align-items: center;
@@ -811,6 +811,9 @@ select {
     flex-flow: column-reverse;
     align-items: center;
     max-height: none;
+  }
+  .features_container :nth-child(2) {
+    margin-bottom: 10px;
   }
   .features_container .features__visual,
 .features_container .features__main-list {
