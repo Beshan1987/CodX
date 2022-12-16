@@ -379,7 +379,7 @@ select {
   background: url(./img/BG_first_footer.png) repeat-x;
   background-position: center;
   background-size: contain;
-  height: 100px;
+  height: calc(150px + 4vw);
   width: 100vw;
   margin-bottom: 10.6666666667%;
 }
@@ -543,7 +543,7 @@ select {
 
 .bg_artists_list {
   background: url(./img/BG_text.png) bottom no-repeat, url(./img/BG_green.png) bottom repeat-x;
-  height: calc(120px + 1vh);
+  height: calc(135px + 4vw);
   background-size: contain;
   position: relative;
 }
@@ -553,7 +553,7 @@ select {
   right: 0;
   background: url(./img/BG_bodies.png) no-repeat bottom right;
   background-size: contain;
-  height: calc(145px + 1vh);
+  height: calc(165px + 4vw);
   width: 100%;
 }
 
