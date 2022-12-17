@@ -42,6 +42,7 @@ body {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
+  min-width: 320px;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/

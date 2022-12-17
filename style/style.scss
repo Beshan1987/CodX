@@ -133,7 +133,7 @@
 	.first-page__main-imgfirst {
 		background: url(./img/BG_man.jpg) no-repeat;
 		background-position: center;
-		background-size: cover;
+		background-size: contain;
 		position: absolute;
 		height: calc(325 / 510 * 100%);
 		width: calc(325 / 580 * 100%);
@@ -174,8 +174,9 @@
 	position: relative;
 	.first-page__main-imgfirst-woman {
 		background: url(./img/BG_woman.jpg) no-repeat;
-		background-position: center;
 		height: calc(410 / 510 * 100%);
+		background-position: center;
+		background-size: cover;
 		width: calc(410 / 580 * 100%);
 		min-width: 350px;
 		border-radius: 30px;
@@ -474,6 +475,7 @@
 
 .discovery__catch-phrase {
 	padding-top: calc(100 / 1200 * 100%);
+	margin-bottom: calc(73 / 1200 * 100%);
 }
 
 .discovery__list_contanier {
@@ -561,7 +563,7 @@
 		&:nth-child(2),
 		&:nth-child(4),
 		&:nth-child(5) {
-			margin-right: 38px;
+			margin-right: calc(38 / 1200 * 100%);
 		}
 	}
 
@@ -626,6 +628,52 @@
 		font-weight: 700;
 		font-size: calc(14px + 0.2vw);
 		line-height: calc(14px + 0.2vw);
+	}
+}
+
+.discovery-top_link {
+	padding-top: calc(63 / 1200 * 100%);
+	margin-bottom: calc(55 / 1200 * 100%);
+}
+
+.faq_title {
+	align-items: flex-start;
+	margin-bottom: calc(73 / 1200 * 100%);
+}
+
+.faq__list {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	> * {
+		margin-bottom: calc(77 / 1200 * 100%);
+	}
+	:last-child {
+		margin-bottom: 0;
+	}
+
+	.faq__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: calc(12px + 0.5vw);
+		line-height: calc(14px + 0.5vw);
+		letter-spacing: 0.48px;
+	}
+	.faq__item-link {
+		position: relative;
+		padding-bottom: calc(17 / 1200 * 100%);
+		width: calc(28 / 1200 * 100%);
+		min-width: calc(28px * 0.5);
+		min-height: calc(17px * 0.5);
+	}
+	.faq__item-img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
 	}
 }
 
@@ -749,7 +797,7 @@
 	justify-content: space-between;
 	width: 100%;
 	margin: 0 auto;
-	margin-bottom: 47px;
+	margin-bottom: calc(47 / 1200 * 100%);
 
 	align-items: center;
 	.footer__author-produced {
