@@ -104,16 +104,34 @@ select {
   src: local(""), url("../style/fonts/outfit-v6-latin-700.eot?#iefix") format("embedded-opentype"), url("../style/fonts/outfit-v6-latin-700.woff2") format("woff2"), url("../style/fonts/outfit-v6-latin-700.woff") format("woff"), url("../style/fonts/outfit-v6-latin-700.ttf") format("truetype"), url("../style/fonts/outfit-v6-latin-700.svg#Outfit") format("svg"); /* Legacy iOS */
 }
 .footer__links .footer__links-list .footer__links-item :hover,
-.footer__links .footer__links-list .footer__links-item-link :hover, .footer__main .footer__new-reg .footer__new-reg-mail :hover, .discovery_top-subtext .discovery_top-links-list :hover, .discovery__top-list .discovery__wrap-top-img :hover, .link__basic .button_basic:hover, .discovery__list_contanier .discovery__item .discovery_subtext:hover, .artists__names-item-button-second:hover, .artists_flex-wrap .artists__names-list ._button_black:hover, .artists_flex-wrap .artists__names-list .artists__names-item-button:hover, .header__menu-list-socials .header__menu-button-inner .header__menu-button .header__menu-button-link :hover, .header__menu-list a:hover {
+.footer__links .footer__links-list .footer__links-item-link :hover, .footer__main .footer__new-reg .footer__new-reg-mail :hover, .discovery_top-subtext .discovery_top-links-list :hover, .link__basic .button_basic:hover, .discovery__list_contanier .discovery__item .discovery_subtext:hover, .artists__names-item-button-second:hover, .artists_flex-wrap .artists__names-list ._button_black:hover, .artists_flex-wrap .artists__names-list .artists__names-item-button:hover, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :hover, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner :hover, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner :hover, .header__menu-list-socials .header__menu-button-inner .header__menu-button .header__menu-button-link :hover, .header__menu-list > li:hover {
   opacity: 0.8;
   cursor: pointer;
   transition: 0.8s;
 }
 
+.discovery__top-list .discovery__wrap-top-img :hover, .discovery__list_contanier .discovery__item .discovery__wrap-img .discovery-img:hover, .page-first__collection .page-first__collection-links :hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(0.98);
+  transition: 0.8s;
+  box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.5);
+}
+
+.faq__list .faq__item-img, .discovery__top-list .discovery__wrap-top-img .discovery-top-img, .discovery__list_contanier .discovery__item .discovery__wrap-img .discovery-img, .features_container .features__visual .features_container-img .features-img, .page-first__collection .page-first__collection-links .page-first__link-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 ._container {
   margin: 0 auto;
   max-width: 1200px;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 .content {
@@ -146,10 +164,6 @@ select {
 .header__menu-list a {
   height: 18px;
 }
-.header__menu-list a:hover {
-  text-decoration: underline;
-}
-
 .header__menu-logo {
   display: grid;
   grid-template-columns: 35% 55%;
@@ -203,6 +217,7 @@ select {
   height: 527px;
   margin-bottom: 25.6666666667%;
   color: #2f2f2f;
+  letter-spacing: 0.48px;
 }
 .first-page__main .first-page__main-inner {
   display: flex;
@@ -214,19 +229,16 @@ select {
   padding-top: 26.7657992565%;
   font-size: 13px;
   line-height: 14px;
-  letter-spacing: 0.48px;
   color: #82cbac;
 }
 .first-page__main .first-page__main-inner .first-page__main-title {
   font-size: calc(35px + 2vw);
   line-height: calc(35px + 2vw);
-  letter-spacing: 0.48px;
   margin-bottom: 4.6468401487%;
 }
 .first-page__main .first-page__main-inner .first-page__main-sub {
   font-size: 17px;
   line-height: 26px;
-  letter-spacing: 0.48px;
 }
 
 .first-page__main-inner-img {
@@ -323,6 +335,19 @@ select {
   line-height: 16px;
 }
 
+.page-first__collection {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-first__collection .page-first__collection-links {
+  position: relative;
+  padding-bottom: 11.2vw;
+  width: 11.1111111111vw;
+  min-width: 100px;
+  min-height: 100px;
+}
 .features_container {
   display: flex;
   justify-content: space-between;
@@ -369,24 +394,6 @@ select {
   position: relative;
   padding-bottom: 107.7898550725%;
 }
-.features_container .features__visual .features_container-img .features-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.page-first__footer {
-  background: url(./img/BG_first_footer.png) repeat-x;
-  background-position: center;
-  background-size: auto 100%;
-  height: calc(100px + 3vw);
-  width: 100vw;
-}
-
 .artists_container {
   color: #2f2f2f;
   padding-top: 6.6666666667%;
@@ -401,11 +408,11 @@ select {
   flex-flow: column;
   align-items: center;
   text-align: center;
+  letter-spacing: 0.48px;
 }
 .title_basic .title_catch {
   font-size: calc(35px + 2vw);
   line-height: calc(35px + 2vw);
-  letter-spacing: 0.48px;
 }
 .title_basic .artists__catch-phrase {
   margin-bottom: 2.0833333333%;
@@ -413,7 +420,6 @@ select {
 .title_basic .title_sub {
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: 0.48px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -479,12 +485,12 @@ select {
 .artists__names-description {
   padding-top: 13.3333333333%;
   max-width: 39.75%;
+  letter-spacing: 0.48px;
 }
 .artists__names-description .artists__names-prof-name {
   margin-bottom: 2.9350104822%;
   font-size: 16px;
   line-height: 18px;
-  letter-spacing: 0.48px;
   color: #ff7f96;
 }
 .artists__names-description .artists__names-prof-title {
@@ -493,13 +499,11 @@ select {
   flex-flow: column;
   font-size: calc(20px + 1.2vw);
   line-height: calc(20px + 1.2vw);
-  letter-spacing: 0.48px;
   margin-bottom: 4.4025157233%;
 }
 .artists__names-description .artists__names-main {
   font-size: calc(16px + 0.2vw);
   line-height: calc(22px + 0.2vw);
-  letter-spacing: 0.48px;
 }
 
 .artists__names-description-second {
@@ -558,7 +562,7 @@ select {
   background-size: auto 64.9122807018%, 100% 100%;
   position: relative;
 }
-.bg_artists_list:active .bg_artist_items {
+.bg_artists_list:hover .bg_artist_items {
   display: none;
 }
 .bg_artists_list .bg_artist_items {
@@ -593,13 +597,6 @@ select {
   padding-bottom: 71.2903225806%;
 }
 .discovery__list_contanier .discovery__item .discovery__wrap-img .discovery-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 30px 30px 0px 0px;
 }
 .discovery__list_contanier .discovery__item .discovery_subtext {
@@ -657,13 +654,6 @@ select {
   padding-bottom: 72.9166666667%;
 }
 .discovery__top-list .discovery__wrap-top-img .discovery-top-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 30px;
 }
 .discovery__top-list .discovery_top-subtext,
@@ -743,16 +733,6 @@ select {
   min-width: 14px;
   min-height: 8.5px;
 }
-.faq__list .faq__item-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .footer_container {
   color: #2f2f2f;
 }
@@ -762,6 +742,7 @@ select {
   margin: 0 auto;
   margin-bottom: 10.4166666667%;
   justify-content: space-between;
+  letter-spacing: 0.48px;
 }
 .footer__main .footer__socials {
   width: 15.8333333333;
@@ -792,12 +773,10 @@ select {
 .footer__main .footer__new-reg .footer__new-reg-title {
   font-size: calc(16px + 1vw);
   line-height: 29px;
-  letter-spacing: 0.48px;
 }
 .footer__main .footer__new-reg .footer__new-reg-sub {
   font-size: calc(10px + 0.35vw);
   line-height: calc(10px + 1vw);
-  letter-spacing: 0.48px;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail button {
   background-color: #2f2f2f;
@@ -812,7 +791,6 @@ select {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.48px;
   color: #ffffff;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail input {
@@ -825,21 +803,18 @@ select {
 .footer__main .footer__new-reg .footer__new-reg-mail input::-moz-placeholder {
   font-size: calc(12px + 0.1vw);
   line-height: calc(12px + 0.1vw);
-  letter-spacing: 0.48px;
   color: rgba(47, 47, 47, 0.36);
   padding: 12px 169px 12px 20px;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail input:-ms-input-placeholder {
   font-size: calc(12px + 0.1vw);
   line-height: calc(12px + 0.1vw);
-  letter-spacing: 0.48px;
   color: rgba(47, 47, 47, 0.36);
   padding: 12px 169px 12px 20px;
 }
 .footer__main .footer__new-reg .footer__new-reg-mail input::placeholder {
   font-size: calc(12px + 0.1vw);
   line-height: calc(12px + 0.1vw);
-  letter-spacing: 0.48px;
   color: rgba(47, 47, 47, 0.36);
   padding: 12px 169px 12px 20px;
 }
@@ -860,7 +835,6 @@ select {
   letter-spacing: 0.48px;
   font-size: calc(14px + 0.1vw);
   line-height: calc(14px + 0.1vw);
-  letter-spacing: 0.48px;
   color: #2f2f2f;
   margin-bottom: 8.3333333333%;
 }
@@ -880,17 +854,16 @@ select {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 3.9166666667%;
+  letter-spacing: 0.48px;
   align-items: center;
 }
 .footer__author .footer__author-produced {
   font-size: calc(11px + 0.1vw);
   line-height: calc(11px + 0.1vw);
-  letter-spacing: 0.48px;
 }
 .footer__author .footer__author-name span {
   font-size: calc(13px + 0.1vw);
   line-height: calc(13px + 0.1vw);
-  letter-spacing: 0.48px;
 }
 .footer__author .footer__author-name span:nth-child(2n) {
   color: #ff7f96;
@@ -908,6 +881,17 @@ select {
   .artists__names-description-second {
     padding-top: 12%;
     width: 50%;
+  }
+}
+@media (max-width: 950px) {
+  .footer__main .footer__new-reg {
+    width: 45%;
+  }
+  .footer__links {
+    width: 25%;
+  }
+  .footer__main .footer__new-reg .footer__new-reg-mail button {
+    width: 30%;
   }
 }
 @media (max-width: 900px) {
@@ -954,17 +938,6 @@ select {
     margin-right: 0;
   }
 }
-@media (max-width: 950px) {
-  .footer__main .footer__new-reg {
-    width: 45%;
-  }
-  .footer__links {
-    width: 25%;
-  }
-  .footer__main .footer__new-reg .footer__new-reg-mail button {
-    width: 30%;
-  }
-}
 @media (max-width: 750px) {
   .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
     top: 10%;
@@ -985,6 +958,39 @@ select {
   }
   .footer__main .footer__new-reg * {
     text-align: center;
+  }
+  .artists_flex-wrap,
+.discovery__list_contanier {
+    flex-wrap: nowrap;
+    flex-flow: column;
+    align-items: center;
+  }
+  .artists_flex-wrap .artists__names-list,
+.discovery__list_contanier .discovery__item {
+    width: 90%;
+  }
+  .artists__names-description {
+    max-width: 90%;
+    width: 90%;
+    text-align: center;
+  }
+  ._artists__names__second,
+.artists__names-description-second {
+    padding-top: 5%;
+    padding-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+  .artists__names-main-second {
+    margin-bottom: 3%;
+  }
+  .artists__names-item-link {
+    display: flex;
+    justify-content: center;
+  }
+  .artists__names-item-button-second {
+    text-align: center;
+    width: 80%;
   }
   .footer__links {
     width: 90%;
@@ -1008,68 +1014,6 @@ select {
   .features_container .features__visual,
 .features_container .features__main-list {
     width: 90%;
-  }
-}
-@media (max-width: 430px) {
-  .first-page__main-inner-img .first-page__main-imgfirst {
-    top: 0;
-    left: 10%;
-    min-width: 80%;
-    height: 50%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman {
-    bottom: 0;
-    left: 20%;
-    min-width: 80%;
-    height: 60%;
-  }
-  .first-page__main {
-    min-width: 320px;
-  }
-  .first-page__main-inner-img {
-    width: 100%;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
-    top: 10%;
-    left: 0;
-  }
-  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
-    left: 20%;
-    top: 80%;
-  }
-}
-@media (max-width: 750px) {
-  .artists_flex-wrap,
-.discovery__list_contanier {
-    flex-wrap: nowrap;
-    flex-flow: column;
-    align-items: center;
-  }
-  .artists_flex-wrap .artists__names-list,
-.discovery__list_contanier .discovery__item {
-    width: 90%;
-  }
-  .artists__names-description {
-    max-width: 90%;
-    width: 90%;
-    text-align: center;
-  }
-  ._artists__names__second,
-.artists__names-description-second {
-    padding-top: 5%;
-    padding-right: 0;
-    width: 90%;
-  }
-  .artists__names-main-second {
-    margin-bottom: 3%;
-  }
-  .artists__names-item-link {
-    display: flex;
-    justify-content: center;
-  }
-  .artists__names-item-button-second {
-    text-align: center;
-    width: 80%;
   }
 }
 @media (max-width: 600px) {
@@ -1110,16 +1054,44 @@ select {
     padding-top: 2%;
   }
 }
-@media (max-width: 450px) {
-  .header__menu-list-socials {
-    display: none;
-  }
-}
 @media (max-width: 550px) {
   .bg_artists_list {
     background: url(./img/BG_text.png) -10% no-repeat, url(./img/BG_green.png) bottom repeat-x;
     height: calc(135px + 10vw);
     background-size: auto 64.9122807018%, 100% 100%;
     position: relative;
+  }
+}
+@media (max-width: 450px) {
+  .header__menu-list-socials {
+    display: none;
+  }
+}
+@media (max-width: 430px) {
+  .first-page__main-inner-img .first-page__main-imgfirst {
+    top: 0;
+    left: 10%;
+    min-width: 80%;
+    height: 50%;
+  }
+  .first-page__main-inner-img .first-page__main-imgfirst-woman {
+    bottom: 0;
+    left: 20%;
+    min-width: 80%;
+    height: 60%;
+  }
+  .first-page__main {
+    min-width: 320px;
+  }
+  .first-page__main-inner-img {
+    width: 100%;
+  }
+  .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
+    top: 10%;
+    left: 0;
+  }
+  .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
+    left: 20%;
+    top: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

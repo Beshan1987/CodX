@@ -5,7 +5,7 @@
 ._container {
 	margin: 0 auto;
 	max-width: 1200px;
-	min-width: 300px;
+	min-width: 320px;
 }
 .content {
 	margin-bottom: calc(130 / 1200 * 100%);
@@ -33,10 +33,9 @@
 	border-radius: 30px;
 	a {
 		height: 18px;
-		&:hover {
-			text-decoration: underline;
-			@extend %hover;
-		}
+	}
+	> li:hover {
+		@extend %hover;
 	}
 }
 .header__menu-logo {
@@ -58,7 +57,7 @@
 		.header__menu-item-link {
 			font-size: calc(10px + 0.4vw);
 			line-height: 16px;
-			letter-spacing: 0.48px;
+			letter-spacing: $letter-spacing;
 			color: #222222;
 		}
 	}
@@ -80,7 +79,7 @@
 			.header__menu-button-link {
 				font-size: 13px;
 				line-height: 14px;
-				letter-spacing: 0.48px;
+				letter-spacing: $letter-spacing;
 				color: #ffffff;
 				text-decoration: none;
 				:hover {
@@ -97,6 +96,7 @@
 	height: 527px;
 	margin-bottom: calc(308 / 1200 * 100%);
 	color: #2f2f2f;
+	letter-spacing: $letter-spacing;
 
 	.first-page__main-inner {
 		display: flex;
@@ -107,20 +107,16 @@
 			padding-top: calc(144 / 538 * 100%);
 			font-size: 13px;
 			line-height: 14px;
-			letter-spacing: 0.48px;
 			color: #82cbac;
 		}
 		.first-page__main-title {
 			font-size: calc(35px + 2vw);
 			line-height: calc(35px + 2vw);
-			letter-spacing: 0.48px;
-
 			margin-bottom: calc(25 / 538 * 100%);
 		}
 		.first-page__main-sub {
 			font-size: 17px;
 			line-height: 26px;
-			letter-spacing: 0.48px;
 		}
 	}
 }
@@ -152,6 +148,9 @@
 			position: absolute;
 			left: calc(-40 / 325 * 100%);
 			top: calc(16 / 325 * 100%);
+			:hover {
+				@extend %hover;
+			}
 			.first-page__main-imgfirst-names {
 				display: flex;
 			}
@@ -160,7 +159,7 @@
 				flex-flow: column;
 				font-size: 11px;
 				line-height: 11px;
-				letter-spacing: 0.48px;
+				letter-spacing: $letter-spacing;
 				justify-content: center;
 				padding-left: 10px;
 				:last-child {
@@ -196,6 +195,9 @@
 			position: absolute;
 			top: calc(333 / 410 * 100%);
 			left: calc(-80 / 410 * 100%);
+			:hover {
+				@extend %hover;
+			}
 			.first-page__main-imgfirst-names {
 				padding-left: 7px;
 				display: flex;
@@ -208,13 +210,36 @@
 				flex-flow: column;
 				font-size: 11px;
 				line-height: 13px;
-				letter-spacing: 0.48px;
+				letter-spacing: $letter-spacing;
 				color: #2f2f2f;
+				:hover {
+					@extend %hover;
+				}
 				& :nth-child(1) {
 					font-size: 16px;
 					line-height: 16px;
 				}
 			}
+		}
+	}
+}
+
+.page-first__collection {
+	display: flex;
+	width: 100vw;
+	flex-wrap: wrap;
+	justify-content: center;
+	.page-first__collection-links {
+		position: relative;
+		padding-bottom: calc(11vw + 0.2vw);
+		width: calc(100vw / 9);
+		min-width: 100px;
+		min-height: 100px;
+		:hover {
+			@extend %hover_img;
+		}
+		.page-first__link-img {
+			@extend %img_adapt;
 		}
 	}
 }
@@ -238,7 +263,7 @@
 		.features__main-item {
 			display: flex;
 			flex-flow: column;
-			letter-spacing: 0.48px;
+			letter-spacing: $letter-spacing;
 			color: #2f2f2f;
 			.features__title {
 				padding-top: 5px;
@@ -263,23 +288,10 @@
 			position: relative;
 			padding-bottom: calc(595 / 552 * 100%);
 			.features-img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
+				@extend %img_adapt;
 			}
 		}
 	}
-}
-
-.page-first__footer {
-	background: url(./img/BG_first_footer.png) repeat-x;
-	background-position: center;
-	background-size: auto 100%;
-	height: calc(100px + 3vw);
-	width: 100vw;
 }
 
 .artists_container {
@@ -295,11 +307,11 @@
 	flex-flow: column;
 	align-items: center;
 	text-align: center;
+	letter-spacing: $letter-spacing;
 
 	.title_catch {
 		font-size: calc(35px + 2vw);
 		line-height: calc(35px + 2vw);
-		letter-spacing: 0.48px;
 	}
 	.artists__catch-phrase {
 		margin-bottom: calc(25 / 1200 * 100%);
@@ -307,7 +319,7 @@
 	.title_sub {
 		font-size: 18px;
 		line-height: 26px;
-		letter-spacing: 0.48px;
+
 		display: flex;
 		flex-flow: column;
 		align-items: center;
@@ -341,7 +353,7 @@
 			font-size: 22px;
 			line-height: 22px;
 			text-align: center;
-			letter-spacing: 0.48px;
+			letter-spacing: $letter-spacing;
 			border: 1px solid #2f2f2f;
 			border-radius: 30px;
 			background: none;
@@ -376,12 +388,13 @@
 .artists__names-description {
 	padding-top: calc(160 / 1200 * 100%);
 	max-width: calc(477 / 1200 * 100%);
+	letter-spacing: $letter-spacing;
 
 	.artists__names-prof-name {
 		margin-bottom: calc(14 / 477 * 100%);
 		font-size: 16px;
 		line-height: 18px;
-		letter-spacing: 0.48px;
+
 		color: #ff7f96;
 	}
 	.artists__names-prof-title {
@@ -390,14 +403,12 @@
 		flex-flow: column;
 		font-size: calc(20px + 1.2vw);
 		line-height: calc(20px + 1.2vw);
-		letter-spacing: 0.48px;
 
 		margin-bottom: calc(21 / 477 * 100%);
 	}
 	.artists__names-main {
 		font-size: calc(16px + 0.2vw);
 		line-height: calc(22px + 0.2vw);
-		letter-spacing: 0.48px;
 	}
 }
 .artists__names-description-second {
@@ -413,7 +424,7 @@
 .artists__names-prof-name_second {
 	font-size: calc(17px + 1vw);
 	line-height: calc(17px + 1vw);
-	letter-spacing: 0.48px;
+	letter-spacing: $letter-spacing;
 	text-transform: uppercase;
 
 	margin-bottom: 7px;
@@ -421,7 +432,7 @@
 .artists__names-prof-title-second {
 	font-size: calc(30px + 1vw);
 	line-height: calc(30px + 1vw);
-	letter-spacing: 0.48px;
+	letter-spacing: $letter-spacing;
 	margin-bottom: calc(38 / 558 * 100%);
 }
 
@@ -429,7 +440,7 @@
 	font-weight: 400;
 	font-size: calc(14px + 0.2vw);
 	line-height: calc(20px + 0.2vw);
-	letter-spacing: 0.48px;
+	letter-spacing: $letter-spacing;
 	margin-bottom: calc(32 / 558 * 100%);
 }
 
@@ -438,7 +449,7 @@
 	font-weight: 700;
 	font-size: 15px;
 	line-height: 16px;
-	letter-spacing: 0.48px;
+	letter-spacing: $letter-spacing;
 	color: #ffffff;
 	width: 166px;
 	min-width: 100px;
@@ -459,7 +470,7 @@
 	height: calc(135px + 10vw);
 	background-size: auto calc(296 / 456 * 100%), 100% 100%;
 	position: relative;
-	&:active .bg_artist_items {
+	&:hover .bg_artist_items {
 		display: none;
 	}
 	.bg_artist_items {
@@ -493,20 +504,18 @@
 			padding-bottom: calc(221 / 310 * 100%);
 
 			.discovery-img {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				object-fit: cover;
+				@extend %img_adapt;
 				border-radius: 30px 30px 0px 0px;
+				&:hover {
+					@extend %hover_img;
+				}
 			}
 		}
 		.discovery_subtext {
 			font-weight: 700;
 			font-size: calc(15px + 0.8vw);
 			line-height: calc(15px + 0.8vw);
-			letter-spacing: 0.48px;
+			letter-spacing: $letter-spacing;
 			padding: calc(29 / 310 * 100%) calc(266 / 310 * 100%)
 				calc(37 / 310 * 100%) calc(50 / 310 * 100%);
 			&:hover {
@@ -525,7 +534,7 @@
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 16px;
-		letter-spacing: 0.48px;
+		letter-spacing: $letter-spacing;
 		color: #ffffff;
 		width: 134px;
 		height: 44px;
@@ -571,16 +580,11 @@
 		position: relative;
 		padding-bottom: calc(210 / 288 * 100%);
 		:hover {
-			@extend %hover;
+			@extend %hover_img;
 		}
 
 		.discovery-top-img {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			object-fit: cover;
+			@extend %img_adapt;
 			border-radius: 30px;
 		}
 	}
@@ -622,7 +626,7 @@
 .discovery_top-subtext_container {
 	font-size: calc(12px + 0.2vw);
 	line-height: calc(14px + 0.2vw);
-	letter-spacing: 0.48px;
+	letter-spacing: $letter-spacing;
 
 	:last-child {
 		font-weight: 700;
@@ -658,7 +662,7 @@
 		justify-content: space-between;
 		font-size: calc(12px + 0.5vw);
 		line-height: calc(14px + 0.5vw);
-		letter-spacing: 0.48px;
+		letter-spacing: $letter-spacing;
 	}
 	.faq__item-link {
 		position: relative;
@@ -668,12 +672,7 @@
 		min-height: calc(17px * 0.5);
 	}
 	.faq__item-img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		object-fit: cover;
+		@extend %img_adapt;
 	}
 }
 
@@ -686,6 +685,7 @@
 	margin: 0 auto;
 	margin-bottom: calc(125 / 1200 * 100%);
 	justify-content: space-between;
+	letter-spacing: $letter-spacing;
 
 	.footer__socials {
 		width: calc(190 / 1200 * 100);
@@ -717,12 +717,10 @@
 		.footer__new-reg-title {
 			font-size: calc(16px + 1vw);
 			line-height: 29px;
-			letter-spacing: 0.48px;
 		}
 		.footer__new-reg-sub {
 			font-size: calc(10px + 0.35vw);
 			line-height: calc(10px + 1vw);
-			letter-spacing: 0.48px;
 		}
 		.footer__new-reg-mail {
 			button {
@@ -741,7 +739,6 @@
 				font-weight: 700;
 				font-size: 14px;
 				line-height: 16px;
-				letter-spacing: 0.48px;
 				color: #ffffff;
 			}
 			input {
@@ -753,7 +750,6 @@
 				&::placeholder {
 					font-size: calc(12px + 0.1vw);
 					line-height: calc(12px + 0.1vw);
-					letter-spacing: 0.48px;
 					color: rgba(47, 47, 47, 0.36);
 					padding: 12px 169px 12px 20px;
 				}
@@ -773,10 +769,10 @@
 		min-width: 40%;
 		.footer__links-item,
 		.footer__links-item-link {
-			letter-spacing: 0.48px;
+			letter-spacing: $letter-spacing;
 			font-size: calc(14px + 0.1vw);
 			line-height: calc(14px + 0.1vw);
-			letter-spacing: 0.48px;
+
 			color: #2f2f2f;
 			margin-bottom: calc(12 / 144 * 100%);
 			:hover {
@@ -798,18 +794,17 @@
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: calc(47 / 1200 * 100%);
+	letter-spacing: $letter-spacing;
 
 	align-items: center;
 	.footer__author-produced {
 		font-size: calc(11px + 0.1vw);
 		line-height: calc(11px + 0.1vw);
-		letter-spacing: 0.48px;
 	}
 	.footer__author-name {
 		span {
 			font-size: calc(13px + 0.1vw);
 			line-height: calc(13px + 0.1vw);
-			letter-spacing: 0.48px;
 		}
 		span:nth-child(2n) {
 			color: #ff7f96;

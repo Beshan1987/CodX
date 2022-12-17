@@ -15,6 +15,18 @@
 	}
 }
 
+@media (max-width: 950px) {
+	.footer__main .footer__new-reg {
+		width: 45%;
+	}
+	.footer__links {
+		width: 25%;
+	}
+	.footer__main .footer__new-reg .footer__new-reg-mail button {
+		width: 30%;
+	}
+}
+
 @media (max-width: 900px) {
 	%font {
 		font-family: "Outfit";
@@ -72,18 +84,6 @@
 	}
 }
 
-@media (max-width: 950px) {
-	.footer__main .footer__new-reg {
-		width: 45%;
-	}
-	.footer__links {
-		width: 25%;
-	}
-	.footer__main .footer__new-reg .footer__new-reg-mail button {
-		width: 30%;
-	}
-}
-
 @media (max-width: 750px) {
 	.first-page__main-inner-img
 		.first-page__main-imgfirst
@@ -111,68 +111,6 @@
 			text-align: center;
 		}
 	}
-	.footer__links {
-		width: 90%;
-		text-align: center;
-	}
-	.footer__main .footer__socials {
-		padding-top: 10px;
-		align-items: center;
-	}
-
-	.footer__author {
-		flex-flow: column;
-	}
-	.features_container {
-		flex-flow: column-reverse;
-		align-items: center;
-		max-height: none;
-		:nth-child(2) {
-			margin-bottom: 10px;
-		}
-	}
-
-	.features_container .features__visual,
-	.features_container .features__main-list {
-		width: 90%;
-	}
-}
-
-@media (max-width: 430px) {
-	.first-page__main-inner-img .first-page__main-imgfirst {
-		top: 0;
-		left: 10%;
-		min-width: 80%;
-		height: 50%;
-	}
-	.first-page__main-inner-img .first-page__main-imgfirst-woman {
-		bottom: 0;
-		left: 20%;
-		min-width: 80%;
-		height: 60%;
-	}
-
-	.first-page__main {
-		min-width: 320px;
-	}
-	.first-page__main-inner-img {
-		width: 100%;
-	}
-	.first-page__main-inner-img
-		.first-page__main-imgfirst
-		.first-page__main-imgfirst-inner {
-		top: 10%;
-		left: 0;
-	}
-	.first-page__main-inner-img
-		.first-page__main-imgfirst-woman
-		.first-page__main-imgfirst-inner {
-		left: 20%;
-		top: 80%;
-	}
-}
-
-@media (max-width: 750px) {
 	.artists_flex-wrap,
 	.discovery__list_contanier {
 		flex-wrap: nowrap;
@@ -193,6 +131,7 @@
 		padding-top: 5%;
 		padding-right: 0;
 		width: 90%;
+		text-align: center;
 	}
 
 	.artists__names-main-second {
@@ -206,9 +145,29 @@
 		text-align: center;
 		width: 80%;
 	}
-}
-
-@media (max-width: 780px) {
+	.footer__links {
+		width: 90%;
+		text-align: center;
+	}
+	.footer__main .footer__socials {
+		padding-top: 10px;
+		align-items: center;
+	}
+	.footer__author {
+		flex-flow: column;
+	}
+	.features_container {
+		flex-flow: column-reverse;
+		align-items: center;
+		max-height: none;
+		:nth-child(2) {
+			margin-bottom: 10px;
+		}
+	}
+	.features_container .features__visual,
+	.features_container .features__main-list {
+		width: 90%;
+	}
 }
 
 @media (max-width: 600px) {
@@ -254,12 +213,6 @@
 	}
 }
 
-@media (max-width: 450px) {
-	.header__menu-list-socials {
-		display: none;
-	}
-}
-
 @media (max-width: 550px) {
 	.bg_artists_list {
 		background: url(./img/BG_text.png) -10% no-repeat,
@@ -267,5 +220,45 @@
 		height: calc(135px + 10vw);
 		background-size: auto 64.9122807018%, 100% 100%;
 		position: relative;
+	}
+}
+
+@media (max-width: 450px) {
+	.header__menu-list-socials {
+		display: none;
+	}
+}
+
+@media (max-width: 430px) {
+	.first-page__main-inner-img .first-page__main-imgfirst {
+		top: 0;
+		left: 10%;
+		min-width: 80%;
+		height: 50%;
+	}
+	.first-page__main-inner-img .first-page__main-imgfirst-woman {
+		bottom: 0;
+		left: 20%;
+		min-width: 80%;
+		height: 60%;
+	}
+
+	.first-page__main {
+		min-width: 320px;
+	}
+	.first-page__main-inner-img {
+		width: 100%;
+	}
+	.first-page__main-inner-img
+		.first-page__main-imgfirst
+		.first-page__main-imgfirst-inner {
+		top: 10%;
+		left: 0;
+	}
+	.first-page__main-inner-img
+		.first-page__main-imgfirst-woman
+		.first-page__main-imgfirst-inner {
+		left: 20%;
+		top: 80%;
 	}
 }

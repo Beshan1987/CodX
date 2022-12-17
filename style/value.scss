@@ -8,3 +8,32 @@
 	cursor: pointer;
 	transition: 0.8s;
 }
+
+%hover_img {
+	opacity: 0.9;
+	cursor: pointer;
+	transform: scale(0.98);
+	transition: 0.8s;
+	box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.5);
+}
+
+%img_adapt {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+$letter-spacing: 0.48px;
+
+%flex_col {
+	display: flex;
+	flex-flow: column;
+}
+
+%flex_row {
+	display: flex;
+	flex-flow: row;
+}
