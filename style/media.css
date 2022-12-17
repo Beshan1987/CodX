@@ -37,6 +37,9 @@
     text-align: center;
     margin-right: 0;
   }
+  .first-page__main .first-page__main-inner .first-page__main-sub {
+    width: 100%;
+  }
   .first-page__main-inner-img .first-page__main-imgfirst {
     width: 30.0925925926%;
   }
@@ -58,7 +61,7 @@
     grid-template-columns: 10% 10% 10% 60%;
   }
   .discovery__top-list .discovery__top-list-wrap-list:nth-child(3) {
-    margin-right: 38px;
+    margin-right: 3.1666666667%;
   }
   .discovery__top-list .discovery__top-list-wrap-list:nth-child(4) {
     margin-right: 0;

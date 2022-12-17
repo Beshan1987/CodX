@@ -1,19 +1,14 @@
-%font {
-	font-family: "Outfit";
-	font-style: normal;
-	font-weight: 400;
-}
 %hover {
 	opacity: 0.8;
 	cursor: pointer;
-	transition: 0.8s;
+	transition: 0.5s;
 }
 
 %hover_img {
 	opacity: 0.9;
 	cursor: pointer;
 	transform: scale(0.98);
-	transition: 0.8s;
+	transition: 0.5s;
 	box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.5);
 }
 
@@ -27,6 +22,12 @@
 }
 
 $letter-spacing: 0.48px;
+
+%flex_col_center {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
 
 %flex_col {
 	display: flex;

@@ -28,12 +28,6 @@
 }
 
 @media (max-width: 900px) {
-	%font {
-		font-family: "Outfit";
-		font-style: normal;
-		font-weight: 400;
-	}
-
 	.first-page__main {
 		flex-wrap: wrap;
 		height: 800px;
@@ -47,6 +41,9 @@
 		width: 100%;
 		text-align: center;
 		margin-right: 0;
+		.first-page__main-sub {
+			width: 100%;
+		}
 	}
 
 	.first-page__main-inner-img .first-page__main-imgfirst {
@@ -73,7 +70,7 @@
 
 	.discovery__top-list .discovery__top-list-wrap-list {
 		&:nth-child(3) {
-			margin-right: 38px;
+			margin-right: calc(38 / 1200 * 100%);
 		}
 		&:nth-child(4) {
 			margin-right: 0;

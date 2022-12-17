@@ -107,14 +107,14 @@ select {
 .footer__links .footer__links-list .footer__links-item-link :hover, .footer__main .footer__new-reg .footer__new-reg-mail :hover, .discovery_top-subtext .discovery_top-links-list :hover, .link__basic .button_basic:hover, .discovery__list_contanier .discovery__item .discovery_subtext:hover, .artists__names-item-button-second:hover, .artists_flex-wrap .artists__names-list ._button_black:hover, .artists_flex-wrap .artists__names-list .artists__names-item-button:hover, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner :hover, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner :hover, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner :hover, .header__menu-list-socials .header__menu-button-inner .header__menu-button .header__menu-button-link :hover, .header__menu-list > li:hover {
   opacity: 0.8;
   cursor: pointer;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .discovery__top-list .discovery__wrap-top-img :hover, .discovery__list_contanier .discovery__item .discovery__wrap-img .discovery-img:hover, .page-first__collection .page-first__collection-links :hover {
   opacity: 0.9;
   cursor: pointer;
   transform: scale(0.98);
-  transition: 0.8s;
+  transition: 0.5s;
   box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.5);
 }
 
@@ -126,6 +126,17 @@ select {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.title_basic .title_sub, .title_basic {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.footer__links .footer__links-list, .footer__main .footer__new-reg, .footer__main .footer__socials, .faq__list, .discovery__top-list .discovery__top-list-wrap-list, .discovery__list_contanier .discovery__item, .artists__names-description .artists__names-prof-title, .features_container .features__main-list .features__main-item, .features_container .features__main-list, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main .first-page__main-inner {
+  display: flex;
+  flex-flow: column;
 }
 
 ._container {
@@ -220,8 +231,6 @@ select {
   letter-spacing: 0.48px;
 }
 .first-page__main .first-page__main-inner {
-  display: flex;
-  flex-flow: column;
   width: 44.8333333333%;
   margin-right: 6.9166666667%;
 }
@@ -239,6 +248,7 @@ select {
 .first-page__main .first-page__main-inner .first-page__main-sub {
   font-size: 17px;
   line-height: 26px;
+  width: 80%;
 }
 
 .first-page__main-inner-img {
@@ -274,8 +284,6 @@ select {
   display: flex;
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner {
-  display: flex;
-  flex-flow: column;
   font-size: 11px;
   line-height: 11px;
   letter-spacing: 0.48px;
@@ -323,8 +331,6 @@ select {
   width: 41px;
 }
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner {
-  display: flex;
-  flex-flow: column;
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.48px;
@@ -356,8 +362,6 @@ select {
   align-items: center;
 }
 .features_container .features__main-list {
-  display: flex;
-  flex-flow: column;
   width: 38.3333333333%;
 }
 .features_container .features__main-list .features__main-item {
@@ -367,8 +371,6 @@ select {
   margin-bottom: 0;
 }
 .features_container .features__main-list .features__main-item {
-  display: flex;
-  flex-flow: column;
   letter-spacing: 0.48px;
   color: #2f2f2f;
 }
@@ -404,9 +406,6 @@ select {
 }
 
 .title_basic {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.48px;
 }
@@ -420,9 +419,6 @@ select {
 .title_basic .title_sub {
   font-size: 18px;
   line-height: 26px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
 }
 
 .artists_flex-wrap {
@@ -495,8 +491,6 @@ select {
 }
 .artists__names-description .artists__names-prof-title {
   margin: 0;
-  display: flex;
-  flex-flow: column;
   font-size: calc(20px + 1.2vw);
   line-height: calc(20px + 1.2vw);
   margin-bottom: 4.4025157233%;
@@ -588,8 +582,6 @@ select {
   margin-bottom: 5.3333333333%;
 }
 .discovery__list_contanier .discovery__item {
-  display: flex;
-  flex-flow: column;
   width: 30%;
 }
 .discovery__list_contanier .discovery__item .discovery__wrap-img {
@@ -606,6 +598,10 @@ select {
   letter-spacing: 0.48px;
   padding: 9.3548387097% 85.8064516129% 11.935483871% 16.1290322581%;
 }
+.discovery__list_contanier .discovery__item .discovery_subtext a {
+  color: #2f2f2f;
+}
+
 .discovery__basic_top {
   margin-bottom: 2.0833333333%;
 }
@@ -636,8 +632,6 @@ select {
   justify-content: space-between;
 }
 .discovery__top-list .discovery__top-list-wrap-list {
-  display: flex;
-  flex-flow: column;
   width: 30%;
   flex-wrap: wrap;
   min-width: 270px;
@@ -708,8 +702,6 @@ select {
 }
 
 .faq__list {
-  display: flex;
-  flex-flow: column;
   width: 100%;
 }
 .faq__list > * {
@@ -752,10 +744,6 @@ select {
   font-size: calc(10px + 0.7vw);
   line-height: calc(10px + 0.7vw);
 }
-.footer__main .footer__socials {
-  display: flex;
-  flex-flow: column;
-}
 .footer__main .footer__socials-list {
   display: flex;
   justify-content: space-between;
@@ -763,8 +751,6 @@ select {
   width: 50%;
 }
 .footer__main .footer__new-reg {
-  display: flex;
-  flex-flow: column;
   width: 37.5%;
 }
 .footer__main .footer__new-reg * {
@@ -826,8 +812,6 @@ select {
   color: #2f2f2f;
 }
 .footer__links .footer__links-list {
-  display: flex;
-  flex-flow: column;
   min-width: 40%;
 }
 .footer__links .footer__links-list .footer__links-item,
@@ -908,6 +892,9 @@ select {
     text-align: center;
     margin-right: 0;
   }
+  .first-page__main .first-page__main-inner .first-page__main-sub {
+    width: 100%;
+  }
   .first-page__main-inner-img .first-page__main-imgfirst {
     width: 30.0925925926%;
   }
@@ -929,7 +916,7 @@ select {
     grid-template-columns: 10% 10% 10% 60%;
   }
   .discovery__top-list .discovery__top-list-wrap-list:nth-child(3) {
-    margin-right: 38px;
+    margin-right: 3.1666666667%;
   }
   .discovery__top-list .discovery__top-list-wrap-list:nth-child(4) {
     margin-right: 0;
