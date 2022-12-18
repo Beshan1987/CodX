@@ -738,10 +738,10 @@
 				height: 40px;
 				width: 60%;
 				&::placeholder {
-					font-size: calc(12px + 0.1vw);
-					line-height: calc(12px + 0.1vw);
+					font-size: calc(12px + 0.2vw);
+					line-height: calc(12px + 0.2vw);
 					color: rgba(47, 47, 47, 0.36);
-					padding: 12px 169px 12px 20px;
+					padding: 50px 169px 12px 20px;
 				}
 			}
 		}

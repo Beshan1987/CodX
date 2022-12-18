@@ -211,6 +211,9 @@
   .bg_artists_list .bg_artist_items {
     background-position: left;
   }
+  .faq_title {
+    align-items: center;
+  }
 }
 @media (max-width: 550px) {
   .bg_artists_list {
@@ -251,5 +254,24 @@
   .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
     left: 20%;
     top: 80%;
+  }
+  .artists_container,
+.features_container,
+.discovery_container,
+.faq_container {
+    margin: 20% 0;
+    padding: 0;
+  }
+  .discovery__basic_top {
+    padding-top: 20%;
+  }
+  .discovery__link {
+    margin-bottom: 0;
+  }
+  .discovery__list_contanier {
+    margin-bottom: 0;
+  }
+  .discovery__catch-phrase {
+    padding-top: 0;
   }
 }/*# sourceMappingURL=media.css.map */
