@@ -79,7 +79,7 @@
 }
 @media (max-width: 800px) {
   .bg_artists_list .bg_artist_items:hover {
-    transform: translateX(3000px);
+    transform: translateX(-3000px);
     transition: 2s 0.3s;
   }
 }
@@ -126,8 +126,12 @@
     width: 90%;
     text-align: center;
   }
+  .artists__names-description .artists__names-main {
+    text-align: justify;
+  }
   .artists__names-main-second {
     margin-bottom: 3%;
+    text-align: justify;
   }
   .artists__names-item-link {
     display: flex;
@@ -217,7 +221,7 @@
     top: 0;
     left: 10%;
     min-width: 80%;
-    height: 50%;
+    height: 60%;
   }
   .first-page__main-inner-img .first-page__main-imgfirst-woman {
     bottom: 0;

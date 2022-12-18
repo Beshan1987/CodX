@@ -129,19 +129,20 @@
 	.first-page__main-imgfirst {
 		background: url(./img/BG_man.jpg) no-repeat;
 		background-position: center;
-		background-size: contain;
+		background-size: cover;
 		position: absolute;
 		height: calc(325 / 510 * 100%);
 		width: calc(325 / 580 * 100%);
 		min-width: 325px;
 		top: 0;
 		left: 0;
+		border-radius: 30px;
+		box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.2);
 		.first-page__main-imgfirst-inner {
 			padding-left: 5px;
 			display: flex;
 			width: 105px;
 			background: rgba(255, 255, 255, 0.85);
-			box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
 			border-radius: 30px;
 			height: 33px;
 			align-items: center;
@@ -182,12 +183,12 @@
 		border-radius: 30px;
 		bottom: 0;
 		right: 0;
+		box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.2);
 		.first-page__main-imgfirst-inner {
 			display: grid;
 			grid-template-columns: 40% 55%;
 			width: 159px;
 			background: rgba(255, 255, 255, 0.85);
-			box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
 			border-radius: 30px;
 			height: 55px;
 			align-items: center;

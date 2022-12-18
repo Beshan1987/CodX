@@ -259,20 +259,21 @@ select {
 .first-page__main-inner-img .first-page__main-imgfirst {
   background: url(./img/BG_man.jpg) no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   height: 63.7254901961%;
   width: 56.0344827586%;
   min-width: 325px;
   top: 0;
   left: 0;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.2);
 }
 .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner {
   padding-left: 5px;
   display: flex;
   width: 105px;
   background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
   border-radius: 30px;
   height: 33px;
   align-items: center;
@@ -309,13 +310,13 @@ select {
   border-radius: 30px;
   bottom: 0;
   right: 0;
+  box-shadow: 1px 1px 10px 1px rgba(15, 15, 27, 0.2);
 }
 .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner {
   display: grid;
   grid-template-columns: 40% 55%;
   width: 159px;
   background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
   border-radius: 30px;
   height: 55px;
   align-items: center;
@@ -936,7 +937,7 @@ select {
 }
 @media (max-width: 800px) {
   .bg_artists_list .bg_artist_items:hover {
-    transform: translateX(3000px);
+    transform: translateX(-3000px);
     transition: 2s 0.3s;
   }
 }
@@ -983,8 +984,12 @@ select {
     width: 90%;
     text-align: center;
   }
+  .artists__names-description .artists__names-main {
+    text-align: justify;
+  }
   .artists__names-main-second {
     margin-bottom: 3%;
+    text-align: justify;
   }
   .artists__names-item-link {
     display: flex;
@@ -1074,7 +1079,7 @@ select {
     top: 0;
     left: 10%;
     min-width: 80%;
-    height: 50%;
+    height: 60%;
   }
   .first-page__main-inner-img .first-page__main-imgfirst-woman {
     bottom: 0;
