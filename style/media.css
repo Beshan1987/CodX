@@ -18,6 +18,9 @@
     padding-top: 12%;
     width: 50%;
   }
+  .features_container .features__main-list {
+    width: 48%;
+  }
 }
 @media (max-width: 950px) {
   .footer__main .footer__new-reg {
@@ -67,6 +70,12 @@
     width: 45%;
     grid-template-columns: 10% 10% 10% 60%;
   }
+  .bg_artist_items:hover {
+    transform: translateX(50%);
+    transition: 1s 0.2s;
+  }
+}
+@media (max-width: 874px) {
   .discovery__top-list .discovery__top-list-wrap-list:nth-child(3) {
     margin-right: 3.1666666667%;
   }
@@ -75,12 +84,6 @@
   }
   .discovery__top-list .discovery__top-list-wrap-list:nth-child(2) {
     margin-right: 0;
-  }
-}
-@media (max-width: 800px) {
-  .bg_artists_list .bg_artist_items:hover {
-    transform: translateX(-3000px);
-    transition: 2s 0.3s;
   }
 }
 @media (max-width: 750px) {
@@ -163,6 +166,7 @@
   .features_container .features__visual,
 .features_container .features__main-list {
     width: 90%;
+    text-align: justify;
   }
 }
 @media (max-width: 600px) {
@@ -201,6 +205,11 @@
   }
   .discovery_top-subtext {
     padding-top: 2%;
+  }
+}
+@media (max-width: 650px) {
+  .bg_artists_list .bg_artist_items {
+    background-position: left;
   }
 }
 @media (max-width: 550px) {
