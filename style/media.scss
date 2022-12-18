@@ -92,8 +92,8 @@
 @media (max-width: 800px) {
 	.bg_artists_list {
 		&:hover .bg_artist_items {
-			transform: translate(3000px);
-			transition: 2s 0.3s;
+			transform: scale(0);
+			transition: 0.5s 0.3s;
 		}
 	}
 }
