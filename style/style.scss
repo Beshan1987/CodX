@@ -114,8 +114,8 @@
 			margin-bottom: calc(25 / 538 * 100%);
 		}
 		.first-page__main-sub {
-			font-size: 17px;
-			line-height: 26px;
+			font-size: calc(13px + 0.3vw);
+			line-height: calc(22px + 0.3vw);
 			width: 80%;
 		}
 	}
@@ -231,10 +231,13 @@
 		position: relative;
 		padding-bottom: calc(11vw + 0.2vw);
 		width: calc(100vw / 9);
-		min-width: 100px;
-		min-height: 100px;
+		min-width: 120px;
+		min-height: 120px;
 		:hover {
 			@extend %hover_img;
+			transform: scale(1.5);
+			transition: 0.5s 0.3s;
+			z-index: 10;
 		}
 		.page-first__link-img {
 			@extend %img_adapt;
@@ -460,9 +463,7 @@
 	height: calc(135px + 10vw);
 	background-size: auto calc(296 / 456 * 100%), 100% 100%;
 	position: relative;
-	&:hover .bg_artist_items {
-		display: none;
-	}
+
 	.bg_artist_items {
 		position: absolute;
 		bottom: 0;
