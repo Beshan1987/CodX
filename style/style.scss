@@ -440,6 +440,7 @@
 
 .artists__names-item-button-second {
 	background: #2f2f2f;
+	border: none;
 	font-weight: 700;
 	font-size: 15px;
 	line-height: 16px;
@@ -459,10 +460,9 @@
 }
 
 .bg_artists_list {
-	background: url(./img/BG_text.png) 50% no-repeat,
-		url(./img/BG_green.png) bottom repeat-x;
-	height: calc(135px + 10vw);
-	background-size: auto calc(296 / 456 * 100%), 100% 100%;
+	background: url(./img/BG_green.png) bottom repeat-x;
+	height: calc(200px + 10vw);
+	max-height: 456px;
 	position: relative;
 
 	.bg_artist_items {
@@ -471,8 +471,32 @@
 		right: 0;
 		background: url(./img/BG_bodies.png) no-repeat bottom right;
 		background-size: auto 100%;
-		height: calc(165px + 10vw);
+		height: calc(240px + 11vw);
+		max-height: 520px;
 		width: 100%;
+	}
+	.bg_artists__container {
+		@extend %flex_col;
+		padding-top: 3vw;
+		width: calc(300px + 18vw);
+
+		> * {
+			padding-bottom: calc(36 / 1200 * 100%);
+		}
+		:last-child {
+			padding-bottom: 0;
+		}
+		.bg_artists__title {
+			font-size: calc(28px + 1.7vw);
+			line-height: calc(28px + 1.7vw);
+		}
+		.bg_artists__sub {
+			font-size: calc(10px + 0.7vw);
+			line-height: calc(14px + 0.7vw);
+		}
+		.bg_artist_bt {
+			width: 207px;
+		}
 	}
 }
 
@@ -705,8 +729,8 @@
 		}
 
 		.footer__new-reg-title {
-			font-size: calc(16px + 1vw);
-			line-height: 29px;
+			font-size: calc(20px + 0.8vw);
+			line-height: calc(20px + 0.8vw);
 		}
 		.footer__new-reg-sub {
 			font-size: calc(10px + 0.35vw);

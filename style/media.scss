@@ -5,6 +5,12 @@
 		line-height: calc(23px + 0.3vw);
 	}
 }
+@media (max-width: 2200px) {
+	.bg_artist_items:hover {
+		transform: translateX(80%);
+		transition: 1s 0.2s;
+	}
+}
 
 @media (max-width: 1000px) {
 	.artists__names-description {
@@ -35,6 +41,12 @@
 	}
 	.footer__main .footer__new-reg .footer__new-reg-mail button {
 		width: 30%;
+	}
+	.bg_artists_list .bg_artist_items {
+		bottom: 0;
+		left: 0;
+		background: url(./img/BG_bodies.png) no-repeat bottom left;
+		background-size: cover;
 	}
 }
 
@@ -77,11 +89,6 @@
 	.header__menu-list-socials {
 		width: 45%;
 		grid-template-columns: 10% 10% 10% 60%;
-	}
-
-	.bg_artist_items:hover {
-		transform: translateX(50%);
-		transition: 1s 0.2s;
 	}
 }
 
@@ -233,22 +240,13 @@
 	}
 }
 
-@media (max-width: 650px) {
-	.bg_artists_list .bg_artist_items {
-		background-position: left;
+@media (max-width: 685px) {
+	.bg_artists_list .bg_artists__container {
+		width: 100%;
+		padding-left: 10px;
 	}
 	.faq_title {
 		align-items: center;
-	}
-}
-
-@media (max-width: 550px) {
-	.bg_artists_list {
-		background: url(./img/BG_text.png) -10% no-repeat,
-			url(./img/BG_green.png) bottom repeat-x;
-		height: calc(135px + 10vw);
-		background-size: auto 64.9122807018%, 100% 100%;
-		position: relative;
 	}
 }
 

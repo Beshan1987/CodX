@@ -134,7 +134,7 @@ select {
   align-items: center;
 }
 
-.footer__links .footer__links-list, .footer__main .footer__new-reg, .footer__main .footer__socials, .faq__list, .discovery__top-list .discovery__top-list-wrap-list, .discovery__list_contanier .discovery__item, .artists__names-description .artists__names-prof-title, .features_container .features__main-list .features__main-item, .features_container .features__main-list, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main .first-page__main-inner {
+.footer__links .footer__links-list, .footer__main .footer__new-reg, .footer__main .footer__socials, .faq__list, .discovery__top-list .discovery__top-list-wrap-list, .discovery__list_contanier .discovery__item, .bg_artists_list .bg_artists__container, .artists__names-description .artists__names-prof-title, .features_container .features__main-list .features__main-item, .features_container .features__main-list, .first-page__main-inner-img .first-page__main-imgfirst-woman .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main-inner-img .first-page__main-imgfirst .first-page__main-imgfirst-inner .first-page__main-name-inner, .first-page__main .first-page__main-inner {
   display: flex;
   flex-flow: column;
 }
@@ -542,6 +542,7 @@ select {
 
 .artists__names-item-button-second {
   background: #2f2f2f;
+  border: none;
   font-weight: 700;
   font-size: 15px;
   line-height: 16px;
@@ -557,9 +558,9 @@ select {
 }
 
 .bg_artists_list {
-  background: url(./img/BG_text.png) 50% no-repeat, url(./img/BG_green.png) bottom repeat-x;
-  height: calc(135px + 10vw);
-  background-size: auto 64.9122807018%, 100% 100%;
+  background: url(./img/BG_green.png) bottom repeat-x;
+  height: calc(200px + 10vw);
+  max-height: 456px;
   position: relative;
 }
 .bg_artists_list .bg_artist_items {
@@ -568,8 +569,30 @@ select {
   right: 0;
   background: url(./img/BG_bodies.png) no-repeat bottom right;
   background-size: auto 100%;
-  height: calc(165px + 10vw);
+  height: calc(240px + 11vw);
+  max-height: 520px;
   width: 100%;
+}
+.bg_artists_list .bg_artists__container {
+  padding-top: 3vw;
+  width: calc(300px + 18vw);
+}
+.bg_artists_list .bg_artists__container > * {
+  padding-bottom: 3%;
+}
+.bg_artists_list .bg_artists__container :last-child {
+  padding-bottom: 0;
+}
+.bg_artists_list .bg_artists__container .bg_artists__title {
+  font-size: calc(28px + 1.7vw);
+  line-height: calc(28px + 1.7vw);
+}
+.bg_artists_list .bg_artists__container .bg_artists__sub {
+  font-size: calc(10px + 0.7vw);
+  line-height: calc(14px + 0.7vw);
+}
+.bg_artists_list .bg_artists__container .bg_artist_bt {
+  width: 207px;
 }
 
 .discovery__catch-phrase {
@@ -760,8 +783,8 @@ select {
   margin-bottom: 3.3333333333%;
 }
 .footer__main .footer__new-reg .footer__new-reg-title {
-  font-size: calc(16px + 1vw);
-  line-height: 29px;
+  font-size: calc(20px + 0.8vw);
+  line-height: calc(20px + 0.8vw);
 }
 .footer__main .footer__new-reg .footer__new-reg-sub {
   font-size: calc(10px + 0.35vw);
@@ -863,6 +886,12 @@ select {
     line-height: calc(23px + 0.3vw);
   }
 }
+@media (max-width: 2200px) {
+  .bg_artist_items:hover {
+    transform: translateX(80%);
+    transition: 1s 0.2s;
+  }
+}
 @media (max-width: 1000px) {
   .artists__names-description {
     padding-top: 4.1666666667%;
@@ -889,6 +918,12 @@ select {
   }
   .footer__main .footer__new-reg .footer__new-reg-mail button {
     width: 30%;
+  }
+  .bg_artists_list .bg_artist_items {
+    bottom: 0;
+    left: 0;
+    background: url(./img/BG_bodies.png) no-repeat bottom left;
+    background-size: cover;
   }
 }
 @media (max-width: 900px) {
@@ -927,10 +962,6 @@ select {
   .header__menu-list-socials {
     width: 45%;
     grid-template-columns: 10% 10% 10% 60%;
-  }
-  .bg_artist_items:hover {
-    transform: translateX(50%);
-    transition: 1s 0.2s;
   }
 }
 @media (max-width: 874px) {
@@ -1065,20 +1096,13 @@ select {
     padding-top: 2%;
   }
 }
-@media (max-width: 650px) {
-  .bg_artists_list .bg_artist_items {
-    background-position: left;
+@media (max-width: 685px) {
+  .bg_artists_list .bg_artists__container {
+    width: 100%;
+    padding-left: 10px;
   }
   .faq_title {
     align-items: center;
-  }
-}
-@media (max-width: 550px) {
-  .bg_artists_list {
-    background: url(./img/BG_text.png) -10% no-repeat, url(./img/BG_green.png) bottom repeat-x;
-    height: calc(135px + 10vw);
-    background-size: auto 64.9122807018%, 100% 100%;
-    position: relative;
   }
 }
 @media (max-width: 450px) {
