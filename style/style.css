@@ -147,6 +147,7 @@ select {
 
 .content {
   margin-bottom: 10.8333333333%;
+  overflow: hidden;
 }
 
 .wrapper {
